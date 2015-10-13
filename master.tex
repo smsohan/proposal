@@ -13,8 +13,10 @@
 \usepackage{xcolor,colortbl}
 \usepackage{multirow}
 \usepackage{longtable}
+% \usepackage{pgfgantt}
 %\includeonly{chaptr2} %If you just want to process chaptr2.tex
-
+\usepackage{lscape}
+\usepackage{gantt}
 
 \begin{document}
 
@@ -377,10 +379,37 @@ Summer 2017 & Thesis defense\\
 \hline
 \caption{Milestones}
 \end{longtable}
+\thispagestyle{empty}
 
-
-
-
+% \pagenumbering{gobble}
+\begin{landscape}
+\begin{gantt}{20}{15}
+     \begin{ganttitle}
+       \numtitle{2013}{1}{2017}{3}
+     \end{ganttitle}
+     %% lots of activities
+     \ganttbar{Course: Dev. of Analytics Apps.}{2}{2}
+     \ganttbar{Lit. Rev. on: Web API Evol.}{2}{2}
+     \ganttbar{Init. Rev. on Industry Prac.}{2}{2}
+     \ganttbar{Case-Study of Web API Evol}{4}{3}
+     \ganttbar{Pub. SERVICES 2015}{5}{1}
+     \ganttbar{Course: Int. to Ent.}{5}{1}
+     \ganttbar{Lit. Rev. on API Usability}{5}{2}
+     \ganttbar{Ident. of RESTful API Doc technique}{6}{3}
+     \ganttbar{Pub. 1 ASE 2015}{6}{1}
+     \ganttbar{Pub. 2 ASE 2015}{7}{1}
+     \ganttbar{Impl. of RESTful API Doc tool}{7}{2}
+     \ganttmilestone[color=blue]{Current}{8}
+     \ganttbar{Candidacy Exam}{8}{1}
+     \ganttbar{Ext. SLR on Web API Evol.}{9}{1}
+     \ganttbar{Planned Pub. ICSME 2016 }{9}{1}
+     \ganttbar{Evaluate and Refine SpREST}{9}{3}
+     \ganttbar{Planned Pub. ICSE / ASE 2017}{10}{2}
+     \ganttbar{Thesis Writing}{11}{2}
+     \ganttbar{Thesis Defense}{13}{1}
+   \end{gantt}
+\end{landscape}
+% \pagenumbering{arabic}
 \backmatter
 
 % \include{glossary}
