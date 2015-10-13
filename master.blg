@@ -1,0 +1,62 @@
+This is BibTeX, Version 0.99d (TeX Live 2012)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: master.aux
+The style file: apalike.bst
+Database file #1: references.bib
+Warning--string name "ieeeacm" is undefined
+--line 122 of file references.bib
+Warning--string name "ieee" is undefined
+--line 272 of file references.bib
+Warning--string name "ecows" is undefined
+--line 290 of file references.bib
+Warning--string name "ieee" is undefined
+--line 296 of file references.bib
+Warning--string name "springer" is undefined
+--line 307 of file references.bib
+A bad cross reference---entry "Nasehi_what_makes"
+refers to entry "DBLP:conf/icsm/2012", which doesn't exist
+Warning--I didn't find a database entry for "DBLP:conf/icsm/2012"
+Warning--empty journal in hadley2006web
+Warning--empty booktitle in Maleshkova_investigating
+You've used 24 entries,
+            1935 wiz_defined-function locations,
+            632 strings with 8581 characters,
+and the built_in function-call counts, 11735 in all, are:
+= -- 1200
+> -- 423
+< -- 29
++ -- 146
+- -- 142
+* -- 907
+:= -- 1858
+add.period$ -- 80
+call.type$ -- 24
+change.case$ -- 190
+chr.to.int$ -- 24
+cite$ -- 26
+duplicate$ -- 519
+empty$ -- 861
+format.name$ -- 184
+if$ -- 2486
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 23
+newline$ -- 122
+num.names$ -- 72
+pop$ -- 212
+preamble$ -- 1
+purify$ -- 191
+quote$ -- 0
+skip$ -- 409
+stack$ -- 0
+substring$ -- 873
+swap$ -- 150
+text.length$ -- 16
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 144
+warning$ -- 2
+while$ -- 98
+width$ -- 0
+write$ -- 322
+(There was 1 error message)

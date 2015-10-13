@@ -1,0 +1,145 @@
+\begin{thebibliography}{}
+
+\bibitem[Chen and Zhang, 2014]{Chen_who_asked}
+Chen, C. and Zhang, K. (2014).
+\newblock Who asked what: Integrating crowdsourced faqs into api documentation.
+\newblock In {\em Companion Proceedings of the International Conference on
+  Software Engineering}, ICSE Companion 2014, pages 456--459. ACM.
+
+\bibitem[Dagenais and Robillard, 2012]{dagenais2012recovering}
+Dagenais, B. and Robillard, M.~P. (2012).
+\newblock Recovering traceability links between an api and its learning
+  resources.
+\newblock In {\em Software Engineering (ICSE), 2012 34th International
+  Conference on}, pages 47--57. IEEE.
+
+\bibitem[Danielsen and Jeffrey, 2013]{Danielsen_validation}
+Danielsen, P. and Jeffrey, A. (2013).
+\newblock Validation and interactivity of web {API} documentation.
+\newblock In {\em International Conference on Web Services}, pages 523--530.
+  IEEE.
+
+\bibitem[Fielding, 2000]{Fielding_rest}
+Fielding, R.~T. (2000).
+\newblock {\em Architectural Styles and the Design of Network-based Software
+  Architectures}.
+\newblock PhD thesis, University of California, Irvine.
+
+\bibitem[Hadley, 2006]{hadley2006web}
+Hadley, M.~J. (2006).
+\newblock Web application description language (wadl).
+
+\bibitem[Hoffman and Strooper, 2003]{Hoffman_api_documentation}
+Hoffman, D. and Strooper, P. (2003).
+\newblock {API} documentation with executable examples.
+\newblock {\em Journal of Systems and Software}, 66(2):143 -- 156.
+
+\bibitem[Ko and Riche, 2011]{ko2011role}
+Ko, A.~J. and Riche, Y. (2011).
+\newblock The role of conceptual knowledge in api usability.
+\newblock In {\em Visual Languages and Human-Centric Computing (VL/HCC), 2011
+  IEEE Symposium on}, pages 173--176. IEEE.
+
+\bibitem[Kopecky et~al., 2008]{Kopecky_hrests}
+Kopecky, J., Gomadam, K., and Vitvar, T. (2008).
+\newblock hrests: An html microformat for describing restful web services.
+\newblock In {\em Proc. of International Conference on Web Intelligence and
+  Intelligent Agent Technology (WI-IAT)}, volume~1, pages 619--625.
+
+\bibitem[Li et~al., 2011]{Ning_omnivoke}
+Li, N., Pedrinaci, C., Maleshkova, M., Kopecky, J., and Domingue, J. (2011).
+\newblock Omnivoke: A framework for automating the invocation of web apis.
+\newblock In {\em IEEE International Conference on Semantic Computing}, pages
+  39--46.
+
+\bibitem[Maalej and Robillard, 2013]{maalej2013patterns}
+Maalej, W. and Robillard, M.~P. (2013).
+\newblock Patterns of knowledge in api reference documentation.
+\newblock {\em Software Engineering, IEEE Transactions on}, 39(9):1264--1282.
+
+\bibitem[Maleshkova et~al., 2010]{Maleshkova_investigating}
+Maleshkova, M., Pedrinaci, C., and Domingue, J. (2010).
+\newblock Investigating web {APIs} on the world wide web.
+\newblock pages 107--114.
+
+\bibitem[Mangler et~al., 2010]{mangler2010origin}
+Mangler, J., Beran, P.~P., and Schikuta, E. (2010).
+\newblock On the origin of services using riddl for description, evolution and
+  composition of restful services.
+\newblock In {\em Proc. of International Conference on Cluster, Cloud and Grid
+  Computing (CCGrid)}, pages 505--508.
+
+\bibitem[Montandon et~al., 2013]{montandon2013documenting}
+Montandon, J.~E., Borges, H., Felix, D., and Valente, M.~T. (2013).
+\newblock Documenting apis with examples: Lessons learned with the apiminer
+  platform.
+\newblock In {\em Reverse Engineering (WCRE), 2013 20th Working Conference on},
+  pages 401--408. IEEE.
+
+\bibitem[Myers et~al., 2010]{Myers_study}
+Myers, B.~A., Jeong, S.~Y., Xie, Y., Beaton, J., Stylos, J., Ehret, R.,
+  Karstens, J., Efeoglu, A., and Busse, D.~K. (2010).
+\newblock Studying the documentation of an api for enterprise service-oriented
+  architecture.
+\newblock {\em J. Organ. End User Comput.}, 22(1):23--51.
+
+\bibitem[Nasehi et~al., 2012]{Nasehi_what_makes}
+Nasehi, S.~M., Sillito, J., Maurer, F., and Burns, C. (2012).
+\newblock What makes a good code example?: {A} study of programming {Q}{\&}{A}
+  in {StackOverflow}.
+\newblock In {\em {IEEE} International Conference on Software Maintenance},
+  pages 25--34.
+
+\bibitem[Parnin and Treude, 2011]{Parnin_measuring}
+Parnin, C. and Treude, C. (2011).
+\newblock Measuring {API} documentation on the web.
+\newblock In {\em Proceedings of the International Workshop on Web 2.0 for
+  Software Engineering}, Web2SE '11, pages 25--30. ACM.
+
+\bibitem[Robillard, 2011]{Robillard_what_makes}
+Robillard, M. (2011).
+\newblock What makes {API}s hard to learn? the answers of developers.
+\newblock {\em Software, IEEE}, PP(99):1--1.
+
+\bibitem[Robillard and DeLine, 2011]{Robillard_a_field_study}
+Robillard, M. and DeLine, R. (2011).
+\newblock A field study of {API} learning obstacles.
+\newblock {\em Empirical Software Engineering}, 16(6):703--732.
+
+\bibitem[Scheller and K{\"u}hn, 2015]{scheller2015automated}
+Scheller, T. and K{\"u}hn, E. (2015).
+\newblock Automated measurement of api usability: The api concepts framework.
+\newblock {\em Information and Software Technology}, 61:145--162.
+
+\bibitem[Stepalina, 2010]{Stepalina_saas}
+Stepalina, E. (2010).
+\newblock {SaaS} support in software documentation systems.
+\newblock In {\em Software Engineering Conference (CEE-SECR), 2010 6th Central
+  and Eastern European}, pages 192--197.
+
+\bibitem[Verborgh et~al., 2013]{RESTdesc}
+Verborgh, R., Steiner, T., Van~Deursen, D., De~Roo, J., Walle, R.~d., and
+  Gabarró~Vallés, J. (2013).
+\newblock Capturing the functionality of web services with functional
+  descriptions.
+\newblock {\em Multimedia Tools and Applications}, 64(2):365--387.
+
+\bibitem[Wu et~al., 2010]{wu2010codocent}
+Wu, Y.-C., Mar, L.~W., and Jiau, H.~C. (2010).
+\newblock Codocent: Support api usage with code example and api documentation.
+\newblock In {\em Software Engineering Advances (ICSEA), 2010 Fifth
+  International Conference on}, pages 135--140. IEEE.
+
+\bibitem[Zhu et~al., 2014]{zhu2014mining}
+Zhu, Z., Zou, Y., Xie, B., Jin, Y., Lin, Z., and Zhang, L. (2014).
+\newblock Mining api usage examples from test code.
+\newblock In {\em Software Maintenance and Evolution (ICSME), 2014 IEEE
+  International Conference on}, pages 301--310. IEEE.
+
+\bibitem[Zibran et~al., 2011]{zibran2011useful}
+Zibran, M.~F., Eishita, F.~Z., and Roy, C.~K. (2011).
+\newblock Useful, but usable? factors affecting the usability of apis.
+\newblock In {\em Reverse Engineering (WCRE), 2011 18th Working Conference on},
+  pages 151--155. IEEE.
+
+\end{thebibliography}
