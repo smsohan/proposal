@@ -111,6 +111,25 @@ Scheller, T. and K{\"u}hn, E. (2015).
 \newblock Automated measurement of api usability: The api concepts framework.
 \newblock {\em Information and Software Technology}, 61:145--162.
 
+\bibitem[Sohan et~al., 2015a]{sohan2015case}
+Sohan, S., Anslow, C., and Maurer, F. (2015a).
+\newblock A case study of web api evolution.
+\newblock In {\em Services (SERVICES), 2015 IEEE World Congress on}, pages
+  245--252. IEEE.
+
+\bibitem[Sohan et~al., 2015b]{sohan2015spyrest}
+Sohan, S., Anslow, C., and Maurer, F. (2015b).
+\newblock Spyrest: Automated restful api documentation using an http proxy
+  server.
+\newblock In {\em Proc. of International Conference on Automated Software
+  Engineering.} IEEE/ACM.
+
+\bibitem[Sohan et~al., 2015c]{sohan2015spyrest_tool}
+Sohan, S., Anslow, C., and Maurer, F. (2015c).
+\newblock Spyrest in action: An automated restful api documentation tool.
+\newblock In {\em Proc. of International Conference on Automated Software
+  Engineering.} IEEE/ACM.
+
 \bibitem[Stepalina, 2010]{Stepalina_saas}
 Stepalina, E. (2010).
 \newblock {SaaS} support in software documentation systems.

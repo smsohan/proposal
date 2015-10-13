@@ -4,7 +4,7 @@
 % \usepackage{makeidx} %If you want to generate an index, automatically
 \usepackage{graphicx} %If you want to include postscript graphics
 % \usepackage{mystyle} %Create your own file, mystyle.sty where you put all your own \newcommand statements, for example.
-
+\usepackage[titletoc]{appendix}
 \usepackage{subcaption}
 \usepackage{url}
 \usepackage{upquote}
@@ -230,7 +230,7 @@ From the literature review I identified a list of open research problems related
 
 \subsection{Research Project 2: Case Study}
 
-To better understand the current industry practices around the documentation of RESTful APIs, I performed a case study on the evolution of nine RESTful APIs representing different industry domains, popularity levels, maturity levels, and open vs. closed source applications. Through this case study, I have summarized and identified opportunities for improving the current industry practices about the versioning, documentation, and communication of API changes for evolving RESTful APIs.
+To better understand the current industry practices around the documentation of RESTful APIs, I performed a case study on the evolution of nine RESTful APIs representing different industry domains, popularity levels, maturity levels, and open vs. closed source applications \cite{sohan2015case}. Through this case study, I have summarized and identified opportunities for improving the current industry practices about the versioning, documentation, and communication of API changes for evolving RESTful APIs.
 
 From the case study, I found a lack of commonly used standards for versioning RESTful APIs. I also found the documentation of the RESTful APIs were largely manual and often only documented the most recent version even through multiple versions were in use. The changelogs are manually generated and disconnected from the API documentation. I observed multiple communication channels exist between RESTful API developers and the developers that use the APIs for collaboration and notification that are disconnected from the API documentation. Overall, I identified an opportunity for future research to focus on finding tools and techniques for RESTful API documentation to solve the observed problems through the case study.
 
@@ -248,7 +248,7 @@ To find a technique for RESTful API documentation, first, I compared the identif
 \item   Collaborative. Documentation needs to be linked with crowd-sourced content to reduce knowledge fragmentation.
 \end{enumerate}
 
-In this research, I proposed a technique to solve these initial set of requirements for RESTful API documentation. At the heart of the technique is a customized HTTP proxy server called Spy. If example API calls are made against a RESTful API via the HTTP proxy server, it can automate the steps S3, S4, S6, and S7 of the manual process as described in Figure 1. The resultant is a smaller workflow using this technique is as shown in Figure \ref{fig:proxy_workflow}.
+In this research, I proposed a technique to solve these initial set of requirements for RESTful API documentation \cite{sohan2015spyrest}. At the heart of the technique is a customized HTTP proxy server called Spy. If example API calls are made against a RESTful API via the HTTP proxy server, it can automate the steps S3, S4, S6, and S7 of the manual process as described in Figure 1. The resultant is a smaller workflow using this technique is as shown in Figure \ref{fig:proxy_workflow}.
 
 \begin{figure}[bth]
   \includegraphics[width=\linewidth]{proxy_workflow.png}
@@ -261,8 +261,7 @@ This reduced workflow introduces automation to the process of RESTful API docume
 
 \subsection{Research Project 4: Prototype Tool Development}
 
-
-To find the feasibility and perceived effectiveness of the devised technique, I have implemented SpyREST as a prototype tool. SpyREST is composed of three different components as follows:
+To find the feasibility and perceived effectiveness of the devised technique, I have implemented SpyREST as a prototype tool \cite{sohan2015spyrest_tool}. SpyREST is composed of three different components as follows:
 
 \subsubsection{The Spy}
 This component is a special purpose HTTP proxy server that can record and post-process HTTP traffic from example JSON based RESTful API calls into usable API documentation. Based on Figure 3, the Spy is responsible for S3 and S4. The Spy saves the recorded HTTP traffic in a structured database that can be used to render the documentation for RESTful APIs.
@@ -383,10 +382,39 @@ Summer 2017 & Thesis defense\\
 
 
 \backmatter
+
 % \include{glossary}
 % \include{notat}
 \bibliographystyle{apalike} %The style you want to use for references.
 \bibliography{references} %The files containing all the articles and books you ever referenced.
 % \printindex %Make an index AUTOMATICALLY
+
+\begin{appendices}
+
+\chapter{Appendix A}
+
+\textbf{Conference Paper at SERVICES 2015:}
+
+Sohan, S., Anslow, C., and Maurer, F. (2015). A case study of web api evolution. In Services (SERVICES), 2015 IEEE World Congress on, pages 245–252. IEEE.
+
+\chapter{Appendix B}
+
+\textbf{Conference Paper at ASE 2015 (New Ideas Track):}
+
+Sohan, S., Anslow, C., and Maurer, F. (2015). SpyREST: Automated RESTful API Documentation using an HTTP Proxy Server. To appear in Proceedings of IEEE/ACM International Conference on Automated Software Engineering.
+
+\chapter{Appendix C}
+
+\textbf{Conference Paper at ASE 2015 (Tool Demo Track):}
+
+Sohan, S., Anslow, C., and Maurer, F. (2015). SpyREST in Action: An Automated RESTful API Documentation Tool. To appear in Proceedings of IEEE/ACM International Conference on Automated Software Engineering.
+
+\chapter{Appendix D}
+
+\textbf{Technical Report:}
+
+Sohan, S., and Maurer, F. (2014). Practical Challenges with Web Service Evolution: A Review of Literature and Current Industry Practices
+\end{appendices}
+
 
 \end{document}
