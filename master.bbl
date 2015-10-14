@@ -46,6 +46,12 @@ Kopecky, J., Gomadam, K., and Vitvar, T. (2008).
 \newblock In {\em Proc. of International Conference on Web Intelligence and
   Intelligent Agent Technology (WI-IAT)}, volume~1, pages 619--625.
 
+\bibitem[Kuhn and DeLine, 2012]{Kuhn_on_designing}
+Kuhn, A. and DeLine, R. (2012).
+\newblock On designing better tools for learning {API}s.
+\newblock In {\em Search-Driven Development - Users, Infrastructure, Tools and
+  Evaluation (SUITE), 2012 ICSE Workshop on}, pages 27--30.
+
 \bibitem[Li et~al., 2011]{Ning_omnivoke}
 Li, N., Pedrinaci, C., Maleshkova, M., Kopecky, J., and Domingue, J. (2011).
 \newblock Omnivoke: A framework for automating the invocation of web apis.
@@ -111,6 +117,11 @@ Scheller, T. and K{\"u}hn, E. (2015).
 \newblock Automated measurement of api usability: The api concepts framework.
 \newblock {\em Information and Software Technology}, 61:145--162.
 
+\bibitem[Shi et~al., 2011]{shi2011empirical}
+Shi, L., Zhong, H., Xie, T., and Li, M. (2011).
+\newblock An empirical study on evolution of api documentation.
+\newblock In {\em FASE}, volume 6603, pages 416--431. Springer.
+
 \bibitem[Sohan et~al., 2015a]{sohan2015case}
 Sohan, S., Anslow, C., and Maurer, F. (2015a).
 \newblock A case study of web api evolution.
@@ -135,6 +146,12 @@ Stepalina, E. (2010).
 \newblock {SaaS} support in software documentation systems.
 \newblock In {\em Software Engineering Conference (CEE-SECR), 2010 6th Central
   and Eastern European}, pages 192--197.
+
+\bibitem[Stylos et~al., 2009]{Jadeite}
+Stylos, J., Myers, B.~A., and Yang, Z. (2009).
+\newblock Jadeite: Improving {API} documentation using usage information.
+\newblock In {\em CHI '09 Extended Abstracts on Human Factors in Computing
+  Systems}, CHI EA '09, pages 4429--4434. ACM.
 
 \bibitem[Verborgh et~al., 2013]{RESTdesc}
 Verborgh, R., Steiner, T., Van~Deursen, D., De~Roo, J., Walle, R.~d., and

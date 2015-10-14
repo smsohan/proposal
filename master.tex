@@ -99,7 +99,9 @@ To achieve the aforementioned goals, I begin by discussing existing literature o
 
 Robillard defines API as follows: An API is the interface to implement functionality that developers can access to perform various tasks \cite{Robillard_a_field_study} \cite{Robillard_what_makes}. API usability is a qualitative concept derived from the characteristics that make an API easy to use. Several papers in the existing literature have focused on identifying the characteristics that make an API usable. Robillard studied API usability by surveying 83 software developers at Microsoft. Robillard found that 78\% of the survey participants read API documentation to learn the APIs, 55\% used code examples, 34\% experimented with the APIs, 30\% read articles, and 29\% asked colleagues. While API documentation is used as the principal source of information about how to use an API, Robillard et al. found that the most severe API learning obstacles are related to the API documentation \cite{Robillard_a_field_study} \. Zibran et al. analyzed bug repositories  for 562 API usability related bugs from five different projects and found that 27.3\% of the reported bugs are API documentation bugs \cite{zibran2011useful}. Scheller et al. provided a framework for objectively measuring API usability based on the number and types of different objects and methods that the API provides \cite{scheller2015automated}. For API usability, Robillard suggested the following requirements as must-have for API documentation: include good examples, be complete, support many example usage scenarios, be conveniently organized, and include relevant design elements. These requirements for general purpose API documentation can also be applied to RESTful API documentation.
 
-Several authors introduced tool support for including usage examples with API documentation. Hoffman et al. recommended using executable examples in API documentation \cite{Hoffman_api_documentation}. They introduced Roast test as a tool support  to combine prosaic description of Java APIs along with executable code examples in a unified API documentation. Montandon et al. developed APIMiner as a search tool for Java and Android APIs and recommended providing production-like API usage examples in the API documentation \cite{montandon2013documenting}. They observed that 35\% of API related web searches performed on APIMiner included the term “example” inferring that developers search for source code examples while using API documentation. Zhu et al. developed an Eclipse plugin called UsETeC to extract API usage examples by automatically synthesizing JUnit test code of the APIs \cite{zhu2014mining}.
+Kuhn performed a user study with 19 professional software developers to understand requirements for tool development to support API learnability \cite{Kuhn_on_designing}. Kuhn recommended the following as requirements for API documentation: trustworthiness, confidentiality, lack of information overload and the need for code examples as first-class documentation artifacts. Shi et al. studied the evolution of API documentation for five different Java projects and presented a quantitative analysis of the types of changes, their impacts on API behaviors and the frequency of the API elements that change between versions \cite{shi2011empirical}. Shi et al. observed a large number of API documentation changes to be related to polishing the custom content, i.e. fix typos, and API usage examples. They recommended API documentation tools to support editors for custom content to provide usage tips and simple ways to include API usage examples without syntax errors.
+
+Several authors introduced tool support for including usage examples with API documentation. Hoffman et al. recommended using executable examples in API documentation \cite{Hoffman_api_documentation}. They introduced Roast test as a tool support  to combine prosaic description of Java APIs along with executable code examples in a unified API documentation. Montandon et al. developed APIMiner as a search tool for Java and Android APIs and recommended providing production-like API usage examples in the API documentation \cite{montandon2013documenting}. They observed that 35\% of API related web searches performed on APIMiner included the term “example” inferring that developers search for source code examples while using API documentation. Zhu et al. developed an Eclipse plugin called UsETeC to extract API usage examples by automatically synthesizing JUnit test code of the APIs \cite{zhu2014mining}. Stylos presented Jadeite as an IDE plug-in that combines a few techniques to provide developers with faster access to relevant API documentation \cite{Jadeite}. Jadeite uses placeholders for API elements such as classes and method names that developers commonly expect to exist, but the actual classes or methods are named differently. When developers search for placeholder API elements, Jadeite shows links to the API documentation of the actual API elements and finds relevant usage examples from Google code search.
 
 Several authors presented techniques for linking official API documentation with crowd-sourced API usage examples that is otherwise fragmented. Nasehi et al. recommended mining knowledge repositories such as StackOverflow and developer forums should be considered for retrieving useful code examples \cite{Nasehi_what_makes}. They also recommended providing wiki-like features so API users can contribute with relevant API examples to the documentation of the APIs in a way so that the official and crowd-sourced sections of the documentation can be easily distinguished. Parnin et al. found that examples of 87.9\% of all jQuery API methods are found by searching software development blogs and forums \cite{Parnin_measuring}. They found these crowd-sourced posts about the APIs also got a median of 8 comments per post which enables an author-reader collaboration. Wu et al. presented an Eclipse plugin called CoDocent that can automatically find code examples using various online code search engines and link with the relevant official API documentation \cite{wu2010codocent}. Chen et al. presented a technique to automatically link official documentation with crowd-sourced documentation by recording the API related web searches that are performed by developers \cite{Chen_who_asked}.
 
@@ -125,8 +127,10 @@ To be auto-generated using reusable tools for better accuracy and cost-effective
 Collaborative &
 To augment official API documentation with relevant crowd-sourced knowledge. \\
 \hline
-Consistent Presentation &
+Presentation &
 Consistent presentation and organization of the aforementioned types of contents. \\
+& Reduced information overload\\
+& Excluding confidential information\\
 \hline
 \end{tabular}
 \end{table}
@@ -145,9 +149,37 @@ Kopecky et al. proposed hRESTS, as an HTML based mico-format to describe RESTful
 
 In addition to researchers, several RESTful API description languages have been proposed by industry practitioners such as RAML \footnote{\url{http://raml.org/}}, Blueprint \footnote{\url{https://apiblueprint.org/}}, and Swagger \footnote{\url{http://swagger.io/}}. There are tools that can automatically convert and publish the description of RESTful APIs from these languages into HTML based RESTful API documentation. In addition to the documentation, there are tools to generate RESTful API client libraries in different programming languages from these API specifications.
 
-Myers et al. performed a user study on the usability of a complex API for enterprise service oriented architecture to understand the obstacles faced by the target users of the API \cite{Myers_study}. They identified the visual presentation of the API documentation played a role in API usability. Specifically, they recommended providing a consistent look-and-feel with explanation for the starting points and an overall map comprising of both text and diagrams, providing a browsing experience with breadcrumb trail following a hierarchy, an effective search interface, providing example code and a way to exercise the examples online without writing code.
+Myers et al. performed a user study on the usability of a complex API for enterprise service oriented architecture to understand the obstacles faced by the target users of the API \cite{Myers_study}. They identified the visual presentation of the API documentation played a role in API usability. Specifically, they recommended providing a consistent look-and-feel with explanation for the starting points and an overall map comprising of both text and diagrams, providing a browsing experience with breadcrumb trail following a hierarchy, an effective search interface, providing example code and a way to exercise the examples online without writing code. In a case study of current industry practices on Web APIs, I have found the documentation of RESTful APIs are performed manually or using bespoke tools \cite{sohan2015case}. I observed the documentation of the studied RESTful APIs to commonly include summary information and API examples, with optional description of the structure of API requests and responses. I found some API providers also include a custom built live API explorer where API client developers can exercise the API examples on a web browser without writing any code. Because manual approaches and custom built tools are used, it is expensive to provide the same features for documenting a RESTful API.
 
-In summary, practitioners and researchers have attempted to solve the problem of RESTful API documentation by proposing candidate specifications to standardize the vocabulary and format of describing RESTful APIs. The process of generating the documentation for a RESTful API following these custom specifications is largely manual since no automated tools are available. These specification formats support describing the structure of different API elements, but no support is provided for API usage examples and exercisable API examples, an important feature for API learnability as identified by the researchers. Thus, there exists a need for further research on RESTful API documentation to satisfy the identified characteristics of API documentation for API learnability. Through my research, I aim to fulfill this need by learning from the currently available solutions and finding innovative techniques and tools for RESTful API documentation.
+\begin{table}[!tbh]
+  \caption{Characteristics of usable API documentation and RESTful APIs}
+  \label{table:restful_apis}
+\begin{tabular}{|p{1.5in} | p{3in}|}
+\hline
+Property & Current State \\
+\hline
+Detailed introduction &
+Manually edited contents are commonly used in RESTful API documentation.
+ \\
+\hline
+Includes Examples &
+RESTful API documentations commonly include manually generated API examples since the existing tools do not support automatically recorded examples.
+ \\
+\hline
+Automated &
+Tools exist that can generate documentation of RESTful APIs if described using custom specifications \\
+\hline
+Collaborative &
+Collaboration is typically found on API forums and StackOverflow.com \\
+\hline
+Presentation &
+Commonly includes RESTful API access information, resources, actions, their request and response structures and API examples.\\
+\hline
+\end{tabular}
+\end{table}
+
+
+Table \ref{table:restful_apis} shows the current state RESTful API documentation in comparison to the aforementioned desired characteristics of usable API documentation. In summary, practitioners and researchers have attempted to solve the problem of RESTful API documentation by proposing candidate specifications to standardize the vocabulary and format of describing RESTful APIs. The process of generating the documentation for a RESTful API following these custom specifications is largely manual since no automated tools are available. These specification formats support describing the structure of different API elements, but no support is provided for API usage examples and exercisable API examples, an important feature for API learnability as identified by the researchers. Thus, there exists a need for further research on RESTful API documentation to satisfy the identified characteristics of API documentation for API learnability. Through my research, I aim to fulfill this need by learning from the currently available solutions and finding innovative techniques and tools for RESTful API documentation.
 
 
 \section{Research Questions}
@@ -383,6 +415,7 @@ Summer 2017 & Thesis defense\\
 
 % \pagenumbering{gobble}
 \begin{landscape}
+\tikzset{every picture/.style={xscale=0.85,transform shape}}
 \begin{gantt}{20}{15}
      \begin{ganttitle}
        \numtitle{2013}{1}{2017}{3}
@@ -399,11 +432,11 @@ Summer 2017 & Thesis defense\\
      \ganttbar{Pub. 1 ASE 2015}{6}{1}
      \ganttbar{Pub. 2 ASE 2015}{7}{1}
      \ganttbar{Impl. of RESTful API Doc tool}{7}{2}
-     \ganttmilestone[color=blue]{Current}{8}
+     \ganttmilestone[color=blue]{\textbf{Current}}{8}
      \ganttbar{Candidacy Exam}{8}{1}
      \ganttbar{Ext. SLR on Web API Evol.}{9}{1}
      \ganttbar{Planned Pub. ICSME 2016 }{9}{1}
-     \ganttbar{Evaluate and Refine SpREST}{9}{3}
+     \ganttbar{Evaluate and Refine SpyREST}{9}{3}
      \ganttbar{Planned Pub. ICSE / ASE 2017}{10}{2}
      \ganttbar{Thesis Writing}{11}{2}
      \ganttbar{Thesis Defense}{13}{1}

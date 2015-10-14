@@ -18,45 +18,45 @@ refers to entry "DBLP:conf/icsm/2012", which doesn't exist
 Warning--I didn't find a database entry for "DBLP:conf/icsm/2012"
 Warning--empty journal in hadley2006web
 Warning--empty booktitle in Maleshkova_investigating
-You've used 27 entries,
+You've used 30 entries,
             1935 wiz_defined-function locations,
-            643 strings with 8974 characters,
-and the built_in function-call counts, 13052 in all, are:
-= -- 1332
-> -- 477
-< -- 30
-+ -- 168
-- -- 160
-* -- 1005
-:= -- 2074
-add.period$ -- 92
-call.type$ -- 27
-change.case$ -- 214
-chr.to.int$ -- 25
-cite$ -- 29
-duplicate$ -- 582
-empty$ -- 961
-format.name$ -- 205
-if$ -- 2761
+            664 strings with 9545 characters,
+and the built_in function-call counts, 14728 in all, are:
+= -- 1509
+> -- 531
+< -- 35
++ -- 188
+- -- 178
+* -- 1127
+:= -- 2322
+add.period$ -- 103
+call.type$ -- 30
+change.case$ -- 238
+chr.to.int$ -- 28
+cite$ -- 32
+duplicate$ -- 663
+empty$ -- 1087
+format.name$ -- 228
+if$ -- 3132
 int.to.chr$ -- 3
 int.to.str$ -- 0
-missing$ -- 26
-newline$ -- 137
-num.names$ -- 81
-pop$ -- 247
+missing$ -- 29
+newline$ -- 152
+num.names$ -- 90
+pop$ -- 277
 preamble$ -- 1
-purify$ -- 215
+purify$ -- 239
 quote$ -- 0
-skip$ -- 445
+skip$ -- 511
 stack$ -- 0
-substring$ -- 943
-swap$ -- 162
-text.length$ -- 17
+substring$ -- 1073
+swap$ -- 193
+text.length$ -- 21
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 162
+type$ -- 180
 warning$ -- 2
-while$ -- 107
+while$ -- 121
 width$ -- 0
-write$ -- 362
+write$ -- 405
 (There was 1 error message)
