@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  14 OCT 2015 00:29
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  14 OCT 2015 00:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -882,35 +882,41 @@ File: pgflibraryarrows.code.tex 2008/10/27 v2.10 (rcs-revision 1.9)
 \pgf@layerboxsaved@background=\box55
 \pgf@layerbox@foreground=\box56
 \pgf@layerboxsaved@foreground=\box57
-) (./master.aux)
+) (/usr/local/texlive/2012/texmf-dist/tex/latex/tools/afterpage.sty
+Package: afterpage 1995/10/27 v1.08 After-Page Package (DPC)
+\AP@output=\toks34
+\AP@partial=\box58
+\AP@footins=\box59
+)
+(./master.aux)
 \openout1 = `master.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
 
 (/usr/local/texlive/2012/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count292
 \scratchdimen=\dimen259
-\scratchbox=\box58
+\scratchbox=\box60
 \nofMPsegments=\count293
 \nofMParguments=\count294
-\everyMPshowfont=\toks34
+\everyMPshowfont=\toks35
 \MPscratchCnt=\count295
 \MPscratchDim=\dimen260
 \MPnumerator=\count296
 \makeMPintoPDFobject=\count297
-\everyMPtoPDFconversion=\toks35
+\everyMPtoPDFconversion=\toks36
 ) (/usr/local/texlive/2012/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -933,40 +939,40 @@ Package caption Info: longtable package is loaded.
 Package: ltcaption 2011/09/12 v1.3 longtable captions (AR)
 )
 Package caption Info: End \AtBeginDocument code.
-\AtBeginShipoutBox=\box59
+\AtBeginShipoutBox=\box61
 
 ABD: EveryShipout initializing macros
-LaTeX Font Info:    Try loading font information for U+msa on input line 36.
+LaTeX Font Info:    Try loading font information for U+msa on input line 37.
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 36.
+LaTeX Font Info:    Try loading font information for U+msb on input line 37.
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 ) [1
 
 
-{/usr/local/texlive/2012/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+{/usr/local/texlive/2012/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [1
+
+
+]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
- [1
-
-
-] [2]
-<manual_workflow.png, id=19, 883.3pt x 198.7425pt>
+ [2]
+<manual_workflow.png, id=22, 883.3pt x 198.7425pt>
 File: manual_workflow.png Graphic file (type png)
  <use manual_workflow.png>
-Package pdftex.def Info: manual_workflow.png used on input line 64.
+Package pdftex.def Info: manual_workflow.png used on input line 67.
 (pdftex.def)             Requested size: 360.0pt x 80.99973pt.
 
-[3 <./manual_workflow.png>] <context.png, id=25, 536.0025pt x 230.8625pt>
+[3 <./manual_workflow.png>] <context.png, id=28, 536.0025pt x 230.8625pt>
 File: context.png Graphic file (type png)
 
 <use context.png>
-Package pdftex.def Info: context.png used on input line 84.
+Package pdftex.def Info: context.png used on input line 87.
 (pdftex.def)             Requested size: 360.0pt x 155.05399pt.
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
@@ -974,13 +980,7 @@ Missing character: There is no ú in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
- [4 <./context.png>]
-Overfull \hbox (60.72388pt too wide) in paragraph at lines 100--101
-\OT1/cmr/m/n/10.95 tion-al-ity that de-vel-op-ers can ac-cess to per-form var-i
--ous tasks [[]]
- []
-
-[5]
+ [4] [5 <./context.png>]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ú in font cmr10!
@@ -988,12 +988,12 @@ Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
  [6]
-Overfull \hbox (0.18437pt too wide) in paragraph at lines 106--107
+Overfull \hbox (0.18437pt too wide) in paragraph at lines 108--109
 \OT1/cmr/m/n/10.95 ing soft-ware de-vel-op-ment blogs and fo-rums [[]]. They
  []
 
 [7] [8] [9] [10] [11] [12] [13] [14]
-Overfull \hbox (2.16154pt too wide) in paragraph at lines 267--268
+Overfull \hbox (2.16154pt too wide) in paragraph at lines 269--270
 \OT1/cmr/m/n/10.95 ma-tu-rity lev-els, and open vs. closed source ap-pli-ca-tio
 ns [[]].
  []
@@ -1002,7 +1002,7 @@ ns [[]].
 File: proxy_workflow.png Graphic file (type png)
 
 <use proxy_workflow.png>
-Package pdftex.def Info: proxy_workflow.png used on input line 288.
+Package pdftex.def Info: proxy_workflow.png used on input line 290.
 (pdftex.def)             Requested size: 360.0pt x 80.99973pt.
  [16] [17 <./proxy_workflow.png>]
 Missing character: There is no ‚ in font cmr10!
@@ -1015,18 +1015,18 @@ Missing character: There is no ù in font cmr10!
 <left.png, id=77, 475.7775pt x 638.385pt>
 File: left.png Graphic file (type png)
  <use left.png>
-Package pdftex.def Info: left.png used on input line 315.
+Package pdftex.def Info: left.png used on input line 317.
 (pdftex.def)             Requested size: 152.63896pt x 204.80363pt.
 
 <right.png, id=78, 489.83pt x 768.8725pt>
 File: right.png Graphic file (type png)
  <use right.png>
-Package pdftex.def Info: right.png used on input line 320.
+Package pdftex.def Info: right.png used on input line 322.
 (pdftex.def)             Requested size: 152.63896pt x 239.5916pt.
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 326.
+ mdframed uses option nobreak mdframed on input line 328.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 326.
+ mdframed uses option nobreak mdframed on input line 328.
  [18]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
@@ -1035,22 +1035,22 @@ Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
  [19 <./left.png> <./right.png>] [20]
-Overfull \hbox (26.54997pt too wide) in alignment at lines 361--366
+Overfull \hbox (26.54997pt too wide) in alignment at lines 363--368
  [] [] 
  []
 
 
-Overfull \hbox (26.54997pt too wide) in alignment at lines 366--394
+Overfull \hbox (26.54997pt too wide) in alignment at lines 368--396
  [] [] 
  []
 
 
-Underfull \hbox (badness 6859) in paragraph at lines 406--407
+Underfull \hbox (badness 6859) in paragraph at lines 408--409
 []|\OT1/cmr/m/n/10.95 User-study eval-u-a-tion of an au-to-mated
  []
 
 
-Overfull \hbox (26.54997pt too wide) in alignment at lines 394--413
+Overfull \hbox (26.54997pt too wide) in alignment at lines 396--415
  [] [] 
  []
 
@@ -1067,18 +1067,18 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-Overfull \hbox (2.97758pt too wide) in paragraph at lines 443--444
+Overfull \hbox (2.97758pt too wide) in paragraph at lines 448--448
 [][] 
  []
 
 [23
+
 
 ]
 Overfull \vbox (50.82726pt too high) has occurred while \output is active []
 
 
 [24] (./master.bbl [25
-
 
 
 ] [26]
@@ -1100,13 +1100,13 @@ Missing character: There is no ì in font cmr10!
 
 ] (./master.aux) ) 
 Here is how much of TeX's memory you used:
- 18794 strings out of 493488
- 346939 string characters out of 3141326
- 401554 words of memory out of 3000000
- 21694 multiletter control sequences out of 15000+200000
+ 18813 strings out of 493488
+ 347246 string characters out of 3141326
+ 402045 words of memory out of 3000000
+ 21710 multiletter control sequences out of 15000+200000
  16669 words of font info for 64 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 63i,11n,81p,1718b,743s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 63i,11n,81p,1521b,747s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfon
 ts/cm/cmbx10.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmbx12.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts
@@ -1118,7 +1118,7 @@ pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.p
 fb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pf
 b></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
 
-Output written on master.pdf (33 pages, 429355 bytes).
+Output written on master.pdf (33 pages, 431859 bytes).
 PDF statistics:
  166 PDF objects out of 1000 (max. 8388607)
  108 compressed objects within 2 object streams

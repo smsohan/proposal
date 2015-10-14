@@ -17,6 +17,7 @@
 %\includeonly{chaptr2} %If you just want to process chaptr2.tex
 \usepackage{lscape}
 \usepackage{gantt}
+\usepackage{afterpage}
 
 \begin{document}
 
@@ -50,9 +51,11 @@ My research is focused on finding a viable solution for RESTful API documentatio
 
 \section{Introduction and Motivation}
 
-Application Programming Interfaces, commonly known as APIs, are used to express a software component in terms of its operations, inputs, outputs, and their types. APIs enable multiple software components to interact with each other. RESTful APIs are a subclass of APIs that are used to integrate software components using web technologies. Fielding defined Representational State Transfer or REST as an architectural style for developing distributed hypermedia systems \cite{Fielding_rest}. Fielding derived the REST architectural style from several other architectural styles of developing network-based applications based on the following essential constraints: client-server, stateless, cache, uniform interface, and layered system. In today’s world of technology, RESTful APIs have become mainstream and the primary choice for integrating internet enabled applications due to its simplicity and similarity with HTTP \cite{mangler2010origin}.
+Application Programming Interfaces, commonly known as APIs, are used to express a software component in terms of its operations, inputs, outputs, and their types\footnote{\url{https://en.wikipedia.org/wiki/Application_programming_interface}}. Robillard defines API as follows: An API is the interface to implement functionality that developers can access to perform various tasks \cite{Robillard_a_field_study} \cite{Robillard_what_makes}. APIs enable multiple software components to interact with each other.
 
-RESTful APIs are used by a wide variety of software applications to integrate and deliver enhanced customer value. For example, realtor.ca, a real estate listing website, uses a RESTful API from www.walkscore.com to provide the relative walk score of a selected property. To show a selected property on the map alongside other points of interest,  www.realtor.ca uses a RESTful API from www.bing.com/maps. By incorporating the map and walk score using RESTful APIs, www.realtor.ca provides important information to their users. Both www.walkscore.com and www.bing.com/maps have published documentation for their RESTful APIs. Most RESTful APIs, including these two examples, are often documented manually or using custom implemented tools. This requires effort to generate and maintain the documentation of RESTful APIs over time since there is a lack of reusable tool support.
+RESTful APIs are a subclass of APIs that are used to integrate software components using web technologies. Fielding defined Representational State Transfer or REST as an architectural style for developing distributed hypermedia systems \cite{Fielding_rest}. Fielding derived the REST architectural style from several other architectural styles of developing network-based applications based on the following essential constraints: client-server, stateless, cache, uniform interface, and layered system. In today’s world of technology, RESTful APIs have become mainstream and the primary choice for integrating internet enabled applications due to its simplicity and similarity with HTTP \cite{mangler2010origin}.
+
+RESTful APIs are used by a wide variety of software applications to integrate and deliver enhanced customer value. For example, realtor.ca\footnote{\url{www.realtor.ca}}, a real estate listing website, uses a RESTful API from walkscore.com\footnote{\url{www.walkscore.com}} to provide the relative walk score of a selected property. To show a selected property on the map alongside other points of interest,  realtor.ca uses a RESTful API from Bing Maps\footnote{\url{www.bing.com/maps}}. By incorporating the map and walk score using RESTful APIs, realtor.ca provides important information to their users. Both walkscore.com and Bing Maps have published documentation for their RESTful APIs. Most RESTful APIs, including these two examples, are often documented manually or using custom implemented tools. This requires effort to generate and maintain the documentation of RESTful APIs over time since there is a lack of reusable tool support.
 
 Previous research in the area of API usability mostly focused on local APIs such as Java libraries. Researchers identified the documentation of APIs as both the primary source of information as well as the key obstacle for API usability. Hence the quality of the API documentation plays an important role in API usability. To this regard, researchers have identified the qualities of ``good API documentation'' as follows: complete, correct, includes thorough explanations and code examples, provides consistent presentation and organization. Today, there are several tools that can be used to document local APIs with the aforementioned qualities.
 
@@ -96,8 +99,7 @@ To achieve the aforementioned goals, I begin by discussing existing literature o
 
 
 \subsection{API Usability and Documentation}
-
-Robillard defines API as follows: An API is the interface to implement functionality that developers can access to perform various tasks \cite{Robillard_a_field_study} \cite{Robillard_what_makes}. API usability is a qualitative concept derived from the characteristics that make an API easy to use. Several papers in the existing literature have focused on identifying the characteristics that make an API usable. Robillard studied API usability by surveying 83 software developers at Microsoft. Robillard found that 78\% of the survey participants read API documentation to learn the APIs, 55\% used code examples, 34\% experimented with the APIs, 30\% read articles, and 29\% asked colleagues. While API documentation is used as the principal source of information about how to use an API, Robillard et al. found that the most severe API learning obstacles are related to the API documentation \cite{Robillard_a_field_study} \. Zibran et al. analyzed bug repositories  for 562 API usability related bugs from five different projects and found that 27.3\% of the reported bugs are API documentation bugs \cite{zibran2011useful}. Scheller et al. provided a framework for objectively measuring API usability based on the number and types of different objects and methods that the API provides \cite{scheller2015automated}. For API usability, Robillard suggested the following requirements as must-have for API documentation: include good examples, be complete, support many example usage scenarios, be conveniently organized, and include relevant design elements. These requirements for general purpose API documentation can also be applied to RESTful API documentation.
+API usability is a qualitative concept derived from the characteristics that make an API easy to use. Several papers in the existing literature have focused on identifying the characteristics that make an API usable. Robillard studied API usability by surveying 83 software developers at Microsoft. Robillard found that 78\% of the survey participants read API documentation to learn the APIs, 55\% used code examples, 34\% experimented with the APIs, 30\% read articles, and 29\% asked colleagues. While API documentation is used as the principal source of information about how to use an API, Robillard et al. found that the most severe API learning obstacles are related to the API documentation \cite{Robillard_a_field_study} \. Zibran et al. analyzed bug repositories  for 562 API usability related bugs from five different projects and found that 27.3\% of the reported bugs are API documentation bugs \cite{zibran2011useful}. Scheller et al. provided a framework for objectively measuring API usability based on the number and types of different objects and methods that the API provides \cite{scheller2015automated}. For API usability, Robillard suggested the following requirements as must-have for API documentation: include good examples, be complete, support many example usage scenarios, be conveniently organized, and include relevant design elements. These requirements for general purpose API documentation can also be applied to RESTful API documentation.
 
 Kuhn performed a user study with 19 professional software developers to understand requirements for tool development to support API learnability \cite{Kuhn_on_designing}. Kuhn recommended the following as requirements for API documentation: trustworthiness, confidentiality, lack of information overload and the need for code examples as first-class documentation artifacts. Shi et al. studied the evolution of API documentation for five different Java projects and presented a quantitative analysis of the types of changes, their impacts on API behaviors and the frequency of the API elements that change between versions \cite{shi2011empirical}. Shi et al. observed a large number of API documentation changes to be related to polishing the custom content, i.e. fix typos, and API usage examples. They recommended API documentation tools to support editors for custom content to provide usage tips and simple ways to include API usage examples without syntax errors.
 
@@ -411,9 +413,7 @@ Summer 2017 & Thesis defense\\
 \hline
 \caption{Milestones}
 \end{longtable}
-\thispagestyle{empty}
 
-% \pagenumbering{gobble}
 \begin{landscape}
 \tikzset{every picture/.style={xscale=0.85,transform shape}}
 \begin{gantt}{20}{15}
@@ -442,7 +442,7 @@ Summer 2017 & Thesis defense\\
      \ganttbar{Thesis Defense}{13}{1}
    \end{gantt}
 \end{landscape}
-% \pagenumbering{arabic}
+
 \backmatter
 
 % \include{glossary}
