@@ -1,5 +1,10 @@
 \begin{thebibliography}{}
 
+\bibitem[iee, 1990]{iee_std}
+ (1990).
+\newblock Ieee standard glossary of software engineering terminology.
+\newblock {\em IEEE Std 610.12-1990}, pages 1--84.
+
 \bibitem[Chen and Zhang, 2014]{Chen_who_asked}
 Chen, C. and Zhang, K. (2014).
 \newblock Who asked what: Integrating crowdsourced faqs into api documentation.

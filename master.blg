@@ -16,47 +16,49 @@ Warning--string name "springer" is undefined
 A bad cross reference---entry "Nasehi_what_makes"
 refers to entry "DBLP:conf/icsm/2012", which doesn't exist
 Warning--I didn't find a database entry for "DBLP:conf/icsm/2012"
+Warning--to sort, need author or key in iee_std
+Warning--empty author in iee_std
 Warning--empty journal in hadley2006web
 Warning--empty booktitle in Maleshkova_investigating
-You've used 30 entries,
+You've used 31 entries,
             1935 wiz_defined-function locations,
-            664 strings with 9545 characters,
-and the built_in function-call counts, 14728 in all, are:
-= -- 1509
+            669 strings with 9638 characters,
+and the built_in function-call counts, 15065 in all, are:
+= -- 1542
 > -- 531
-< -- 35
+< -- 36
 + -- 188
 - -- 178
-* -- 1127
-:= -- 2322
-add.period$ -- 103
-call.type$ -- 30
-change.case$ -- 238
-chr.to.int$ -- 28
-cite$ -- 32
-duplicate$ -- 663
-empty$ -- 1087
+* -- 1154
+:= -- 2367
+add.period$ -- 106
+call.type$ -- 31
+change.case$ -- 243
+chr.to.int$ -- 29
+cite$ -- 36
+duplicate$ -- 682
+empty$ -- 1120
 format.name$ -- 228
-if$ -- 3132
+if$ -- 3208
 int.to.chr$ -- 3
 int.to.str$ -- 0
-missing$ -- 29
-newline$ -- 152
+missing$ -- 30
+newline$ -- 157
 num.names$ -- 90
-pop$ -- 277
+pop$ -- 283
 preamble$ -- 1
-purify$ -- 239
+purify$ -- 244
 quote$ -- 0
-skip$ -- 511
+skip$ -- 526
 stack$ -- 0
-substring$ -- 1073
-swap$ -- 193
-text.length$ -- 21
+substring$ -- 1101
+swap$ -- 199
+text.length$ -- 22
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 180
-warning$ -- 2
-while$ -- 121
+type$ -- 186
+warning$ -- 4
+while$ -- 123
 width$ -- 0
-write$ -- 405
+write$ -- 417
 (There was 1 error message)
