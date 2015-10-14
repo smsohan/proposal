@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  14 OCT 2015 09:25
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  14 OCT 2015 10:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1118,7 +1118,7 @@ pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.p
 fb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pf
 b></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
 
-Output written on master.pdf (33 pages, 431881 bytes).
+Output written on master.pdf (33 pages, 431886 bytes).
 PDF statistics:
  166 PDF objects out of 1000 (max. 8388607)
  108 compressed objects within 2 object streams
