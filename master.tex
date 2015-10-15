@@ -35,21 +35,24 @@ Calgary, Alberta
 
 
 \maketitle
-
+\tableofcontents
 \frontmatter
+
 % \include{preface}
 
-\mainmatter
-
-\section{Abstract}
-
+\chapter*{Abstract}
 API documentation presents both a problem and an opportunity for API usability. Most developers learn to use an API based on its documentation and at the same time faces obstacles using the APIs due to lack of necessary information in the documentation \cite{Robillard_what_makes}. As a result, the documentation of API has become an active research topic to improve API usability.
 
 RESTful APIs provide interconnectivity among network based software applications. Using RESTful APIs applications can deliver valuable features and enrich user experiences by leveraging third-party services that are otherwise expensive to develop and maintain. Documentation of a RESTful API is a key information source for software developers that use the API. As a RESTful API evolves, the documentation also needs to be maintained alongside. So, RESTful API developers need to generate and maintain the documentation of their APIs with the qualities that make the API usable. This introduces the problem of interest in this research: how to document RESTful APIs? This is a problem because there is a lack of scientifically established guidelines and automated tool support for RESTful API documentation.
 
-My research is focused on finding a viable solution for RESTful API documentation so that RESTful API developers can document any RESTful API with a reusable tool. To this regard, I identify a set of requirements for usable RESTful API documentation by studying the existing literature and current industry practices on documentation of RESTful APIs. To meet these requirements I introduce a novel technique using an HTTP Proxy server to automatically generate and maintain the documentation for RESTful APIs. I demonstrate and present a preliminary evaluation of a HTTP proxy server based technique that implements the requirements to solve the RESTful API documentation problem through SpyREST, a prototype implementation. In a preliminary evaluation, I have found the HTTP proxy server based technique can be used to generate more accurate documentation of RESTful APIs compared to manually written official API documentation. I plan to conduct usability and user evaluation of the aforementioned technique to validate the proposed technique by involving RESTful API developers from the industry.
+My research is focused on finding a viable technique and tool support for RESTful API documentation. To this regard, I identify a set of requirements for usable RESTful API documentation by studying the existing literature and current industry practices on documentation of RESTful APIs. To meet these requirements I introduce a novel technique using an HTTP proxy server. I demonstrate \emph{SpyREST}, a prototype tool, that implements a HTTP proxy server based technique to meet the requirements. In a preliminary evaluation, I have found SpyREST can be used to generate more accurate documentation of RESTful APIs compared to manually written official API documentation. I plan to conduct usability and user evaluation of the aforementioned technique to validate the proposed technique by involving RESTful API developers from the industry.
 
-\section{Introduction and Motivation}
+\mainmatter
+
+
+
+
+\chapter{Introduction and Motivation}
 
 Application Programming Interfaces, commonly known as APIs, are used to express a software component in terms of its operations, inputs, outputs, and their types\footnote{\url{https://en.wikipedia.org/wiki/Application_programming_interface}}. Robillard defines API as follows: An API is the interface to implement functionality that developers can access to perform various tasks \cite{Robillard_a_field_study} \cite{Robillard_what_makes}. APIs enable multiple software components to interact with each other.
 
@@ -93,12 +96,12 @@ My research context is depicted in Figure \ref{fig:context}. My dissertation top
 
 The scope of my dissertation topic is as follows: identifying the requirements related to RESTful API Documentation for API usability, and developing and evaluating techniques and tools to solve the identified requirements. The scope for this research includes the documentation of all RESTful APIs, irrespective of the technology that may be used to implement the APIs. Tool development is scoped to proof of concept only. As such, my research will not focus on developing production-ready tools.
 
-\section{Background}
+\chapter{Background}
 
 To achieve the aforementioned goals, I begin by discussing existing literature on generic API usability and documentation. Then I provide a review the literature on RESTful APIs to identify the unsolved problems related to the documentation of RESTful APIs.
 
 
-\subsection{API Usability and Documentation}
+\section{API Usability and Documentation}
 API usability is a qualitative concept derived from the characteristics that make an API easy to use. Several papers in the existing literature have focused on identifying the characteristics that make an API usable. Robillard studied API usability by surveying 83 software developers at Microsoft \cite{Robillard_a_field_study}. Robillard found that 78\% of the survey participants read API documentation to learn the APIs, 55\% used code examples, 34\% experimented with the APIs, 30\% read articles, and 29\% asked colleagues. While API documentation is used as the principal source of information about how to use an API, Robillard et al. found that the most severe API learning obstacles are related to the API documentation For API usability, Robillard suggested the following requirements as must-have for API documentation: include good examples, be complete, support many example usage scenarios, be conveniently organized, and include relevant design elements. These requirements for general purpose API documentation can also be applied to RESTful API documentation.
 
 Zibran et al. analyzed bug repositories  for 562 API usability related bugs from five different projects and found that 27.3\% of the reported bugs are API documentation bugs \cite{zibran2011useful}. Scheller et al. provided a framework for objectively measuring API usability based on the number and types of different objects and methods that the API provides \cite{scheller2015automated}.
@@ -142,7 +145,7 @@ Consistent presentation and organization of the aforementioned types of contents
 
 Table \ref{table:good_apis} presents a summary of the desired characteristics for API documentation of usable APIs as identified in the existing literature. These characteristics are also important for the usability of RESTful APIs. But the aforementioned techniques and tools that can be used to document local APIs to satisfy these desired characteristics are not easily applicable for documenting RESTful APIs. Through my research I aim to find an innovative solution for the documentation of usable RESTful APIs defined by these characteristics.
 
-\subsection{RESTful API Documentation} % (fold)
+\section{RESTful API Documentation} % (fold)
 Researchers have performed case studies to identify challenges associated with RESTful APIs and proposed solutions to overcome some of the identified challenges.
 
 Maleshkova analyzed the state of RESTful APIs and found that most RESTful APIs are manually documented which results into API underspecification, and a lack of support for common tasks and reusable tools \cite{Maleshkova_investigating}. Maleshkova found that more than 75% of the RESTful APIs included API examples which contributes to the ease of development work for the API client developers.
@@ -186,11 +189,11 @@ Commonly includes RESTful API access information, resources, actions, their requ
 Table \ref{table:restful_apis} shows the current state RESTful API documentation in comparison to the aforementioned desired characteristics of usable API documentation. In summary, practitioners and researchers have attempted to solve the problem of RESTful API documentation by proposing candidate specifications to standardize the vocabulary and format of describing RESTful APIs. The process of generating the documentation for a RESTful API following these custom specifications is largely manual since no automated tools are available. These specification formats support describing the structure of different API elements, but no support is provided for API usage examples and exercisable API examples, an important feature for API learnability as identified by the researchers. Thus, there exists a need for further research on RESTful API documentation to satisfy the identified characteristics of API documentation for API learnability. Through my research, I aim to fulfill this need by learning from the currently available solutions and finding innovative techniques and tools for RESTful API documentation.
 
 
-\section{Research Questions}
+\chapter{Research Questions}
 
 Within the context of RESTful API documentation and the scope as discussed before, my research aims to address the following three high level research questions.
 
-\subsection{RQ1: What are the requirements for usable RESTful API documentation?
+\section{RQ1: What are the requirements for usable RESTful API documentation?
 }
 
 Researchers have identified several important requirements for API usability primarily focusing on local APIs. RESTful APIs have unique characteristics compared to local APIs. As a result, the recommendations for local API documentation needs to be adapted and extended for RESTful API documentation to account for the differences between the two. There is a lack of understanding regarding what and where to adapt and extend the local API specific recommendations for usable API documentation. To develop this understanding, I look for answers to the following research questions:
@@ -200,7 +203,7 @@ Researchers have identified several important requirements for API usability pri
   \item How to adapt and extend the recommended characteristics for usable local API documentation to support the documentation of RESTful APIs?
 \end{enumerate}
 
-\subsection{RQ2: How to provide reusable tool support so that RESTful API developers can create and maintain usable RESTful API documentation?
+\section{RQ2: How to provide reusable tool support so that RESTful API developers can create and maintain usable RESTful API documentation?
 } % (fold)
 
 The tool support for RESTful API documentation is rather limited. Researchers have identified the commonly used and important content for usable API documentation, and introduced tools primarily focusing in local APIs. Several researchers and practitioners have proposed languages and specifications for describing RESTful APIs. There is a lack of reusable tool support that RESTful API developers can use to automatically generate the custom specifications to document their RESTful APIs. This results into a manual process or bespoke implementation of tools that are expensive to develop and maintain over time. To improve the tool support, I investigate the following research questions:
@@ -210,7 +213,7 @@ The tool support for RESTful API documentation is rather limited. Researchers ha
   \item What techniques can be used to provide reusable tool support for the documentation of RESTful APIs?
 \end{enumerate}
 
-\subsection{RQ3: How to evaluate a technique and tool for RESTful API documentation?}
+\section{RQ3: How to evaluate a technique and tool for RESTful API documentation?}
 
 In absence of the necessary tool support for RESTful API documentation, it is also not clear how to evaluate such a tool. A scientific evaluation method is required to assure RESTful API developers about the merits and drawbacks of a technique and related tool supports. In the literature, several papers discussed the topic of empirical evaluation of software tools and techniques. Based on the evaluation methods identified by the researchers, specific evaluation scenarios need to be designed for RESTful API documentation tools. This introduces the following questions:
 
@@ -221,11 +224,11 @@ documentation technique?
 \end{enumerate}
 
 
-\section{Research Contributions and Methods}
+\chapter{Research Contributions and Methods}
 
 I aim to add to the body of existing knowledge by finding answers to the aforementioned research questions. Here, I explain the expected contribution of my research against the identified research problems RQ1-3.
 
-\subsection{RQ1: I will perform literature reviews to identify the requirements for usable RESTful API documentation.}
+\section{RQ1: I will perform literature reviews to identify the requirements for usable RESTful API documentation.}
 
 I start by reviewing the existing literature on API usability to understand the recommended characteristics of usable API documentation. I also review the existing literature on RESTful APIs to identify the problems and challenges specific to the documentation of RESTful APIs and their currently available solutions. In addition to reviewing the literature, I perform a case study involving multiple RESTful APIs to understand the current industry practices around RESTful API documentation. I combine the outcomes of the literature reviews and the case study to identify the essential requirements for usable RESTful API documentation. In particular, I aim to contribute with identifying the following information so that RESTful API developers can provide usable documentation for their APIs:
 
@@ -238,13 +241,13 @@ I start by reviewing the existing literature on API usability to understand the 
 
 In addition to listing the requirements for RESTful API documentation, I will identify differences between the requirements of usable local and RESTful API documentation. This will help tool developers to adapt and extend the currently available tool support for local API documentation to meet the requirements for RESTful APIs.
 
-\subsection{RQ2: I will present a novel technique for automatically generating and maintaining RESTful API documentation with reusable tool support.}
+\section{RQ2: I will present a novel technique for automatically generating and maintaining RESTful API documentation with reusable tool support.}
 
 I investigate the currently available solutions to meet the identified requirements of usable RESTful API documentation. The currently available solutions are found from the existing literature as well as the tools found in the industry. I start by comparing currently available solutions to find the unmet requirements that require an adaptation of the available techniques or the introduction of new techniques. Then, I introduce the new techniques along with the adaptation of existing techniques that can be used to develop tool support for automated RESTful API documentation. The resultant is a mapping of the identified requirements and new techniques to solve the requirements for usable RESTful API documentation.
 
 To demonstrate the newly proposed techniques, I develop a prototype API documentation tool that can be used by RESTful API developers. The development of the tool and the newly identified techniques are interdependent. Based on the challenges and opportunities that are discovered during the development phase, the proposed techniques are further adjusted and refined. I compare the output of the developed tool against the official documentation of multiple RESTful APIs from different providers to demonstrate the advantages of the newly proposed techniques.
 
-\subsection{RQ3: I will evaluate the proposed technique for RESTful API documentation.}
+\section{RQ3: I will evaluate the proposed technique for RESTful API documentation.}
 
 I will explore the literature to understand the scientifically accepted methods of empirically evaluating software tools and techniques. I will also investigate the research methods that have been used by researchers for the evaluation of API documentation tools. Based on my findings, I will propose a research method that can be used to evaluate RESTful API documentation tools and techniques.
 
@@ -252,7 +255,7 @@ Once the research method is identified, I will propose a plan for performing an 
 
 Following the plan, I will perform an evaluation to find the effectiveness of my proposed techniques and the prototype tools. I will use the feedback from the evaluation to refine and extend the essential requirements, and their associated proposed techniques and tool for usable RESTful API documentation. The evaluation will help RESTful API developers to use an improved tool support and the researchers to perform future research to advance to state of tool support for RESTful API documentation.
 
-\section{Current Progress}
+\chapter{Current Progress}
 
 In my first two years of the PhD program, I have made progress towards achieving the proposed contributions. The current progress can be explained through four different research projects that have been carried out during this time.
 \subsection{Research Project 1: Systematic Literature Review}
@@ -266,13 +269,13 @@ I started my research by performing a systematic literature review on the topic 
 
 From the literature review I identified a list of open research problems related to evolving web APIs in the areas of documentation, implementation, deployment, and communication of API changes. Among these identified areas, I observed the documentation related challenges included the following problems: automatic API documentation, support for multiple versions, auto-generating the changelog between versions, and supporting interactive exercisable API explorers for multiple API versions. I observed several papers in the literature proposed techniques to solve these problems primarily focusing on SOAP based Web APIs that have limited applicability to RESTful APIs. Based on this observation from the literature review, I selected my dissertation research topic to be the documentation of RESTful APIs.
 
-\subsection{Research Project 2: Case Study}
+\section{Research Project 2: Case Study}
 
 To better understand the current industry practices around the documentation of RESTful APIs, I performed a case study on the evolution of nine RESTful APIs representing different industry domains, popularity levels, maturity levels, and open vs. closed source applications \cite{sohan2015case}. Through this case study, I have summarized and identified opportunities for improving the current industry practices about the versioning, documentation, and communication of API changes for evolving RESTful APIs.
 
 From the case study, I found a lack of commonly used standards for versioning RESTful APIs. I also found the documentation of the RESTful APIs were largely manual and often only documented the most recent version even through multiple versions were in use. The changelogs are manually generated and disconnected from the API documentation. I observed multiple communication channels exist between RESTful API developers and the developers that use the APIs for collaboration and notification that are disconnected from the API documentation. Overall, I identified an opportunity for future research to focus on finding tools and techniques for RESTful API documentation to solve the observed problems through the case study.
 
-\subsection{Research Project 3: Finding a Technique for RESTful API documentation}
+\section{Research Project 3: Finding a Technique for RESTful API documentation}
 
 To find a technique for RESTful API documentation, first, I compared the identified problems from the literature review and case study on web API evolution against the existing literature on API usability. The outcome of this comparison is an initial list of requirements for usable RESTful API documentation towards achieving proposed contribution on RQ1. I identified the following high level requirements as must-have for the usable documentation of RESTful APIs:
 
@@ -297,18 +300,18 @@ In this research, I proposed a technique to solve these initial set of requireme
 
 This reduced workflow introduces automation to the process of RESTful API documentation. The steps for creating good example API calls and adding custom content are best done manually since it requires human judgement. This novel technique offers several advantages over the existing solutions for RESTful API documentation. For example, unlike existing techniques that require manual effort to create an intermediate representation of the API using custom specifications for generating final HTML documentation, the proxy server directly converts the recorded HTTP data into the documentation. Because this is a HTTP proxy server, the technique is applicable to all RESTful APIs irrespective of the technology that is used to implement the APIs or the API clients that are used to make the example API calls. By automating the process of recording and processing HTTP traffic for documentation, the documentation can be organically updated as the API evolves by replaying the examples. Overall, this technique can satisfy the identified must-have requirements for RESTful API documentation.
 
-\subsection{Research Project 4: Prototype Tool Development}
+\section{Research Project 4: Prototype Tool Development}
 
 To find the feasibility and perceived effectiveness of the devised technique, I have implemented SpyREST as a prototype tool \cite{sohan2015spyrest_tool}. SpyREST is composed of three different components as follows:
 
-\subsubsection{The Spy}
+\subsection{The Spy}
 This component is a special purpose HTTP proxy server that can record and post-process HTTP traffic from example JSON based RESTful API calls into usable API documentation. Based on Figure 3, the Spy is responsible for S3 and S4. The Spy saves the recorded HTTP traffic in a structured database that can be used to render the documentation for RESTful APIs.
 
 For every API example, the Spy automatically extracts and saves the API version, RESTful resource, API action, HTTP query parameters, request and response headers, and request and response bodies. The Spy recognizes the commonly used standards for RESTful APIs to auto-extract the aforementioned properties for each example. While executing the example API calls, the RESTful API developers can use several SpyREST specific HTTP headers to provide custom descriptions for the API examples, and override autodetected versions, resources and API actions.
 
 The Spy automatically filters HTTP authorization headers to prevent the leakage of API access credentials into the documentation. To reduce information overload, the Spy automatically truncates large arrays in API example responses to only show sample items instead of the whole array. As a result, the Spy automates the repeated parts of the RESTful API documentation process using intelligent defaults. For evolving APIs, a rerun of the same API examples will update the auto-generated documentation. The Spy component provides satisfies the following requirements: automated, example based, version-aware, customizable, and a reusable solution for RESTful API documentation.
 
-\subsubsection{The Web App}
+\subsection{The Web App}
 The web app complements the features of the Spy to fulfill the rest of the identified “must-have” requirements for RESTful API documentation. The web app displays RESTful API documentation based on the data recorded by the Spy and implements the steps S5, S6, and S7 as shown in Figure 3. Additionally, it allows RESTful API developers to add custom content via a wiki-like editor to describe overview information and thorough explanations about business rules related to the APIs that are not derivable solely based on example API calls.
 For each API example, the web app uses the recorded data from the Spy and displays a cURL command that the API client developers can use to exercise the API without writing any client code. cURL is a general purpose utility tool that can be used as a RESTful API client to make API calls.
 
@@ -333,7 +336,7 @@ For each API example, the web app uses the recorded data from the Spy and displa
 
 To facilitate collaboration, the web app provides in-page commenting throughout the site. Developers can discuss and learn from past discussions on API related matters on the API documentation site where the documentation of specific API elements and related collaboration can co-exist. The web app component implements solutions for the following requirements: executable examples, customizable, reusable, and collaborative documentation for RESTful APIs. Figure \ref{fig:spyrest_screenshots} shows a screenshot of the web app. The contents and presentation on Figure \ref{fig:spyrest_screenshots} has been adapted for brevity.
 
-\subsubsection{Database}
+\subsection{Database}
 
 The database component plays a supporting role so that the Spy and the web app can leverage a single database. It stores all the auto-recorded information from the Spy and custom edited content from the web app.
 
@@ -341,7 +344,7 @@ In addition to satisfying the “must-have” requirements, SpyREST provides sev
 
 I have performed a preliminary evaluation of SpyREST and found it to produce more accurate documentation of RESTful APIs compared to the official documentation. In this preliminary evaluation, I have used SpyREST to auto-generate the documentation of 25 RESTful API actions from three different products. In 5 of the 25 API actions, SpyREST documented API response fields that were not included the official API documentations, resulting into more accurate documentation of the APIs. In the remainder of my research, I plan to conduct additional evaluations of SpyREST involving RESTful API developers to better understand the effectiveness of the HTTP Proxy server based approach of automated RESTful API documentation.
 
-\section{Conclusion}
+\chapter{Conclusion}
 
 Through my dissertation research, I plan to improve the body of knowledge on RESTful API documentation to help software developers and researchers build usable RESTful APIs. This research is positioned based on the existing literature on API usability and RESTful APIs, to identify and solve unique challenges observed in the current industry practices related to RESTful API documentation. My research will help understand the requirements for usable RESTful API documentation and provide novel techniques and tool support with their evaluation to solve the identified requirements. This has implications for both researchers and RESTful API developers. With the extended knowledge, researchers will be able to perform future research to find alternate techniques and tool support for RESTful API documentation. Software developers can use the developed tool from this research to generate and maintain usable documentation for their RESTful APIs in a cost-effective manner.
 
@@ -356,8 +359,7 @@ Through my dissertation research, I plan to improve the body of knowledge on RES
 % \include{chaptr4}
 % \include{chaptr5}
 
-\clearpage
-\section{Milestones}
+\chapter{Milestones}
 
 The following list summarizes the important milestones that I have completed and plan to complete during the period of my dissertation research. The future milestones are subjected to change based on the early feedbacks found from the preliminary evaluation of the proposed technique and SpyREST.
 
@@ -386,6 +388,7 @@ Winter 2015 & Identification of a technique for RESTful API documentation \\
 & Initial implementation of SpyREST \\
 & Preliminary evaluation of SpyREST \\
 \hline
+\newpage
 Spring - Summer 2015 & Courses (Patterns in Software Engineering) \\
 & Refinement of prototype tool implementation \\
 & Ethics approval for evaluating SpyREST \\
@@ -397,7 +400,6 @@ Fall 2015 & Reading list for candidacy examination \\
 & Writing research proposal document for candidacy examination \\
 & Candidacy examination \\
 \hline
-\newpage
 Winter 2016 & Extending the Systematic Literature Review on Web API Evolution \\
 & Performing an evaluation of SpyREST \\
 & Planned Publications: ICSME 2016 \\
@@ -455,27 +457,19 @@ Summer 2017 & Thesis defense\\
 
 \begin{appendices}
 
-\chapter{Appendix A}
-
-\textbf{Conference Paper at SERVICES 2015:}
+\chapter{Conference Paper at SERVICES 2015}
 
 Sohan, S., Anslow, C., and Maurer, F. (2015). A case study of web API evolution. In Services (SERVICES), 2015 IEEE World Congress on, pages 245–252. IEEE.
 
-\chapter{Appendix B}
-
-\textbf{Conference Paper at ASE 2015 (New Ideas Track):}
+\chapter{Conference Paper at ASE 2015 (New Ideas Track)}
 
 Sohan, S., Anslow, C., and Maurer, F. (2015). SpyREST: Automated RESTful API Documentation using an HTTP Proxy Server. To appear in Proc. of IEEE/ACM International Conference on Automated Software Engineering.
 
-\chapter{Appendix C}
-
-\textbf{Conference Paper at ASE 2015 (Tool Demo Track):}
+\chapter{Conference Paper at ASE 2015 (Tool Demo Track)}
 
 Sohan, S., Anslow, C., and Maurer, F. (2015). SpyREST in Action: An Automated RESTful API Documentation Tool. To appear in Proc. of IEEE/ACM International Conference on Automated Software Engineering.
 
-\chapter{Appendix D}
-
-\textbf{Technical Report:}
+\chapter{Technical Report}
 
 Sohan, S., and Maurer, F. (2014). Practical Challenges with Web Service Evolution: A Review of Literature and Current Industry Practices
 \end{appendices}
