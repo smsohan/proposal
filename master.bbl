@@ -2,7 +2,7 @@
 
 \bibitem[iee, 1990]{iee_std}
  (1990).
-\newblock Ieee standard glossary of software engineering terminology.
+\newblock {IEEE} standard glossary of software engineering terminology.
 \newblock {\em IEEE Std 610.12-1990}, pages 1--84.
 
 \bibitem[Chen and Zhang, 2014]{Chen_who_asked}
@@ -15,14 +15,20 @@ Chen, C. and Zhang, K. (2014).
 Dagenais, B. and Robillard, M.~P. (2012).
 \newblock Recovering traceability links between an api and its learning
   resources.
-\newblock In {\em Software Engineering (ICSE), 2012 34th International
-  Conference on}, pages 47--57. IEEE.
+\newblock In {\em Proc. of 2012 International Conference on Software
+  Engineering (ICSE)}, pages 47--57. IEEE.
 
 \bibitem[Danielsen and Jeffrey, 2013]{Danielsen_validation}
 Danielsen, P. and Jeffrey, A. (2013).
 \newblock Validation and interactivity of web {API} documentation.
 \newblock In {\em International Conference on Web Services}, pages 523--530.
   IEEE.
+
+\bibitem[Easterbrook et~al., 2008]{easterbrook2008selecting}
+Easterbrook, S., Singer, J., Storey, M.-A., and Damian, D. (2008).
+\newblock Selecting empirical methods for software engineering research.
+\newblock In {\em Guide to advanced empirical software engineering}, pages
+  285--311. Springer.
 
 \bibitem[Fielding, 2000]{Fielding_rest}
 Fielding, R.~T. (2000).
@@ -39,6 +45,13 @@ Hoffman, D. and Strooper, P. (2003).
 \newblock {API} documentation with executable examples.
 \newblock {\em Journal of Systems and Software}, 66(2):143 -- 156.
 
+\bibitem[Kitchenham et~al., 2008]{kitchenham2008evaluating}
+Kitchenham, B., Al-Khilidar, H., Babar, M.~A., Berry, M., Cox, K., Keung, J.,
+  Kurniawati, F., Staples, M., Zhang, H., and Zhu, L. (2008).
+\newblock Evaluating guidelines for reporting empirical software engineering
+  studies.
+\newblock {\em Empirical Software Engineering}, 13(1):97--121.
+
 \bibitem[Kitchenham and Charters, 2007]{kitchenham2007guidelines}
 Kitchenham, B.~A. and Charters, S. (2007).
 \newblock Guidelines for performing systematic literature reviews in software
@@ -47,12 +60,13 @@ Kitchenham, B.~A. and Charters, S. (2007).
 \bibitem[Ko and Riche, 2011]{ko2011role}
 Ko, A.~J. and Riche, Y. (2011).
 \newblock The role of conceptual knowledge in api usability.
-\newblock In {\em Visual Languages and Human-Centric Computing (VL/HCC), 2011
-  IEEE Symposium on}, pages 173--176. IEEE.
+\newblock In {\em Proc. of 2011 Symposium on Visual Languages and Human-Centric
+  Computing (VL/HCC)}, pages 173--176. IEEE.
 
 \bibitem[Kopecky et~al., 2008]{Kopecky_hrests}
 Kopecky, J., Gomadam, K., and Vitvar, T. (2008).
-\newblock hrests: An html microformat for describing restful web services.
+\newblock {hRESTS}: An {HTML} microformat for describing {RESTful} web
+  services.
 \newblock In {\em Proc. of International Conference on Web Intelligence and
   Intelligent Agent Technology (WI-IAT)}, volume~1, pages 619--625.
 
@@ -62,11 +76,17 @@ Kuhn, A. and DeLine, R. (2012).
 \newblock In {\em Search-Driven Development - Users, Infrastructure, Tools and
   Evaluation (SUITE), 2012 ICSE Workshop on}, pages 27--30.
 
+\bibitem[Lethbridge et~al., 2005]{lethbridge2005studying}
+Lethbridge, T.~C., Sim, S.~E., and Singer, J. (2005).
+\newblock Studying software engineers: Data collection techniques for software
+  field studies.
+\newblock {\em Empirical software engineering}, 10(3):311--341.
+
 \bibitem[Li et~al., 2011]{Ning_omnivoke}
 Li, N., Pedrinaci, C., Maleshkova, M., Kopecky, J., and Domingue, J. (2011).
-\newblock Omnivoke: A framework for automating the invocation of web apis.
-\newblock In {\em IEEE International Conference on Semantic Computing}, pages
-  39--46.
+\newblock {OmniVoke}: A framework for automating the invocation of web {APIs}.
+\newblock In {\em Proc. of IEEE International Conference on Semantic
+  Computing}, pages 39--46.
 
 \bibitem[Maalej and Robillard, 2013]{maalej2013patterns}
 Maalej, W. and Robillard, M.~P. (2013).
@@ -80,17 +100,17 @@ Maleshkova, M., Pedrinaci, C., and Domingue, J. (2010).
 
 \bibitem[Mangler et~al., 2010]{mangler2010origin}
 Mangler, J., Beran, P.~P., and Schikuta, E. (2010).
-\newblock On the origin of services using riddl for description, evolution and
-  composition of restful services.
+\newblock On the origin of services using {RIDDL} for description, evolution
+  and composition of {RESTful} services.
 \newblock In {\em Proc. of International Conference on Cluster, Cloud and Grid
   Computing (CCGrid)}, pages 505--508.
 
 \bibitem[Montandon et~al., 2013]{montandon2013documenting}
 Montandon, J.~E., Borges, H., Felix, D., and Valente, M.~T. (2013).
-\newblock Documenting apis with examples: Lessons learned with the apiminer
+\newblock Documenting {APIs} with examples: Lessons learned with the {APIMiner}
   platform.
-\newblock In {\em Reverse Engineering (WCRE), 2013 20th Working Conference on},
-  pages 401--408. IEEE.
+\newblock In {\em Proc. of 2013 Working Conference on Reverse Engineering
+  (WCRE)}, pages 401--408. IEEE.
 
 \bibitem[Myers et~al., 2010]{Myers_study}
 Myers, B.~A., Jeong, S.~Y., Xie, Y., Beaton, J., Stylos, J., Ehret, R.,
@@ -103,14 +123,14 @@ Myers, B.~A., Jeong, S.~Y., Xie, Y., Beaton, J., Stylos, J., Ehret, R.,
 Nasehi, S.~M., Sillito, J., Maurer, F., and Burns, C. (2012).
 \newblock What makes a good code example?: {A} study of programming {Q}{\&}{A}
   in {StackOverflow}.
-\newblock In {\em {IEEE} International Conference on Software Maintenance},
-  pages 25--34.
+\newblock In {\em Proc of. {IEEE} International Conference on Software
+  Maintenance}, pages 25--34.
 
 \bibitem[Parnin and Treude, 2011]{Parnin_measuring}
 Parnin, C. and Treude, C. (2011).
 \newblock Measuring {API} documentation on the web.
 \newblock In {\em Proceedings of the International Workshop on Web 2.0 for
-  Software Engineering}, Web2SE '11, pages 25--30. ACM.
+  Software Engineering}, (Web2SE), pages 25--30. ACM.
 
 \bibitem[Robillard, 2011]{Robillard_what_makes}
 Robillard, M. (2011).
@@ -122,46 +142,60 @@ Robillard, M. and DeLine, R. (2011).
 \newblock A field study of {API} learning obstacles.
 \newblock {\em Empirical Software Engineering}, 16(6):703--732.
 
+\bibitem[Runeson and H{\"o}st, 2009]{runeson2009guidelines}
+Runeson, P. and H{\"o}st, M. (2009).
+\newblock Guidelines for conducting and reporting case study research in
+  software engineering.
+\newblock {\em Empirical software engineering}, 14(2):131--164.
+
 \bibitem[Scheller and K{\"u}hn, 2015]{scheller2015automated}
 Scheller, T. and K{\"u}hn, E. (2015).
-\newblock Automated measurement of api usability: The api concepts framework.
+\newblock Automated measurement of api usability: The {API} concepts framework.
 \newblock {\em Information and Software Technology}, 61:145--162.
 
 \bibitem[Shi et~al., 2011]{shi2011empirical}
 Shi, L., Zhong, H., Xie, T., and Li, M. (2011).
-\newblock An empirical study on evolution of api documentation.
-\newblock In {\em FASE}, volume 6603, pages 416--431. Springer.
+\newblock An empirical study on evolution of {API} documentation.
+\newblock In {\em Proc. of Conference on Fundamental Approaches to Software
+  Engineering (FASE)}, volume 6603, pages 416--431. Springer.
+
+\bibitem[Sj{\o}berg et~al., 2002]{sjoberg2002conducting}
+Sj{\o}berg, D.~I., Anda, B., Arisholm, E., Dyb{\aa}, T., J{\o}rgensen, M.,
+  Karahasanovic, A., Koren, E.~F., and Vok{\'a}c, M. (2002).
+\newblock Conducting realistic experiments in software engineering.
+\newblock In {\em Proc. of 2002 International Symposium on Empirical Software
+  Engineering}, pages 17--26. IEEE.
 
 \bibitem[Sohan et~al., 2015a]{sohan2015case}
 Sohan, S., Anslow, C., and Maurer, F. (2015a).
 \newblock A case study of web api evolution.
-\newblock In {\em Services (SERVICES), 2015 IEEE World Congress on}, pages
-  245--252. IEEE.
+\newblock In {\em Proc. of 2015 IEEE World Congress on Services (SERVICES)},
+  pages 245--252. IEEE.
 
 \bibitem[Sohan et~al., 2015b]{sohan2015spyrest}
 Sohan, S., Anslow, C., and Maurer, F. (2015b).
 \newblock Spyrest: Automated restful api documentation using an http proxy
   server.
-\newblock In {\em Proc. of International Conference on Automated Software
-  Engineering.} IEEE/ACM.
+\newblock In {\em Tp Appear in Proc. of International Conference on Automated
+  Software Engineering.} IEEE/ACM.
 
 \bibitem[Sohan et~al., 2015c]{sohan2015spyrest_tool}
 Sohan, S., Anslow, C., and Maurer, F. (2015c).
 \newblock Spyrest in action: An automated restful api documentation tool.
-\newblock In {\em Proc. of International Conference on Automated Software
-  Engineering.} IEEE/ACM.
+\newblock In {\em To Appear in Proc. of International Conference on Automated
+  Software Engineering.} IEEE/ACM.
 
 \bibitem[Stepalina, 2010]{Stepalina_saas}
 Stepalina, E. (2010).
 \newblock {SaaS} support in software documentation systems.
-\newblock In {\em Software Engineering Conference (CEE-SECR), 2010 6th Central
-  and Eastern European}, pages 192--197.
+\newblock In {\em Proc. of 2010 Central and Eastern European Software
+  Engineering Conference (CEE-SECR)}, pages 192--197.
 
 \bibitem[Stylos et~al., 2009]{Jadeite}
 Stylos, J., Myers, B.~A., and Yang, Z. (2009).
 \newblock Jadeite: Improving {API} documentation using usage information.
-\newblock In {\em CHI '09 Extended Abstracts on Human Factors in Computing
-  Systems}, CHI EA '09, pages 4429--4434. ACM.
+\newblock In {\em '09 Extended Abstracts on Human Factors in Computing
+  Systems}, (CHI EA), pages 4429--4434. ACM.
 
 \bibitem[Verborgh et~al., 2013]{RESTdesc}
 Verborgh, R., Steiner, T., Van~Deursen, D., De~Roo, J., Walle, R.~d., and
@@ -173,19 +207,19 @@ Verborgh, R., Steiner, T., Van~Deursen, D., De~Roo, J., Walle, R.~d., and
 \bibitem[Wu et~al., 2010]{wu2010codocent}
 Wu, Y.-C., Mar, L.~W., and Jiau, H.~C. (2010).
 \newblock Codocent: Support api usage with code example and api documentation.
-\newblock In {\em Software Engineering Advances (ICSEA), 2010 Fifth
-  International Conference on}, pages 135--140. IEEE.
+\newblock In {\em Proc. of 2010 International Conference on Software
+  Engineering Advances (ICSEA)}, pages 135--140. IEEE.
 
 \bibitem[Zhu et~al., 2014]{zhu2014mining}
 Zhu, Z., Zou, Y., Xie, B., Jin, Y., Lin, Z., and Zhang, L. (2014).
 \newblock Mining api usage examples from test code.
-\newblock In {\em Software Maintenance and Evolution (ICSME), 2014 IEEE
-  International Conference on}, pages 301--310. IEEE.
+\newblock In {\em Proc. of 2014 IEEE International Conference on Software
+  Maintenance and Evolution (ICSME),}, pages 301--310. IEEE.
 
 \bibitem[Zibran et~al., 2011]{zibran2011useful}
 Zibran, M.~F., Eishita, F.~Z., and Roy, C.~K. (2011).
-\newblock Useful, but usable? factors affecting the usability of apis.
-\newblock In {\em Reverse Engineering (WCRE), 2011 18th Working Conference on},
-  pages 151--155. IEEE.
+\newblock Useful, but usable? factors affecting the usability of {API}s.
+\newblock In {\em Proc. of 2011 Working Conference on Reverse Engineering
+  (WCRE)}, pages 151--155. IEEE.
 
 \end{thebibliography}

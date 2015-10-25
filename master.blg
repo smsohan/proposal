@@ -21,45 +21,45 @@ Warning--empty author in iee_std
 Warning--empty journal in hadley2006web
 Warning--empty journal in kitchenham2007guidelines
 Warning--empty booktitle in Maleshkova_investigating
-You've used 32 entries,
+You've used 37 entries,
             1935 wiz_defined-function locations,
-            673 strings with 9787 characters,
-and the built_in function-call counts, 15370 in all, are:
-= -- 1570
-> -- 544
-< -- 37
-+ -- 192
-- -- 182
-* -- 1178
-:= -- 2423
-add.period$ -- 108
-call.type$ -- 32
-change.case$ -- 250
-chr.to.int$ -- 30
-cite$ -- 38
-duplicate$ -- 695
-empty$ -- 1140
-format.name$ -- 235
-if$ -- 3265
+            703 strings with 11238 characters,
+and the built_in function-call counts, 18107 in all, are:
+= -- 1838
+> -- 694
+< -- 40
++ -- 246
+- -- 236
+* -- 1426
+:= -- 2880
+add.period$ -- 125
+call.type$ -- 37
+change.case$ -- 302
+chr.to.int$ -- 35
+cite$ -- 43
+duplicate$ -- 789
+empty$ -- 1312
+format.name$ -- 296
+if$ -- 3809
 int.to.chr$ -- 3
 int.to.str$ -- 0
-missing$ -- 31
-newline$ -- 161
-num.names$ -- 93
-pop$ -- 291
+missing$ -- 36
+newline$ -- 186
+num.names$ -- 108
+pop$ -- 342
 preamble$ -- 1
-purify$ -- 251
+purify$ -- 303
 quote$ -- 0
-skip$ -- 537
+skip$ -- 607
 stack$ -- 0
-substring$ -- 1113
-swap$ -- 199
-text.length$ -- 22
+substring$ -- 1301
+swap$ -- 220
+text.length$ -- 24
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 192
+type$ -- 222
 warning$ -- 5
-while$ -- 125
+while$ -- 147
 width$ -- 0
-write$ -- 427
+write$ -- 494
 (There was 1 error message)
