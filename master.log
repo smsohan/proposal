@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  15 OCT 2015 08:28
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  24 OCT 2015 23:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -967,23 +967,24 @@ er.toc
 
 ]
 Chapter 1.
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ô in font cmr10!
 [1
 
 
-] <manual_workflow.png, id=31, 883.3pt x 198.7425pt>
+]
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+ [2] <manual_workflow.png, id=36, 883.3pt x 198.7425pt>
 File: manual_workflow.png Graphic file (type png)
 
 <use manual_workflow.png>
-Package pdftex.def Info: manual_workflow.png used on input line 70.
+Package pdftex.def Info: manual_workflow.png used on input line 82.
 (pdftex.def)             Requested size: 360.0pt x 80.99973pt.
- [2 <./manual_workflow.png>]
-<context.png, id=37, 536.0025pt x 230.8625pt>
+ [3 <./manual_workflow.png>]
+<context.png, id=43, 536.0025pt x 230.8625pt>
 File: context.png Graphic file (type png)
  <use context.png>
-Package pdftex.def Info: context.png used on input line 90.
+Package pdftex.def Info: context.png used on input line 102.
 (pdftex.def)             Requested size: 360.0pt x 155.05399pt.
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
@@ -991,9 +992,9 @@ Missing character: There is no ú in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
- [3] [4 <./context.png>]
+ [4 <./context.png>] [5]
 Chapter 2.
-[5
+[6
 
 ]
 Missing character: There is no ‚ in font cmr10!
@@ -1003,93 +1004,93 @@ Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
 
-Overfull \hbox (0.18437pt too wide) in paragraph at lines 113--114
+Overfull \hbox (0.18437pt too wide) in paragraph at lines 125--126
 \OT1/cmr/m/n/10.95 ing soft-ware de-vel-op-ment blogs and fo-rums [[]]. They
  []
 
-[6] [7] [8] [9] [10]
+[7] [8] [9] [10] [11]
 Chapter 3.
-[11
+[12
 
-] [12]
+] [13]
 Chapter 4.
-[13
+[14
 
-] [14] [15]
+] [15] [16]
 Chapter 5.
 
-Overfull \hbox (2.16154pt too wide) in paragraph at lines 274--275
+Overfull \hbox (2.16154pt too wide) in paragraph at lines 286--287
 \OT1/cmr/m/n/10.95 ma-tu-rity lev-els, and open vs. closed source ap-pli-ca-tio
 ns [[]].
  []
 
-[16
+[17
 
-] [17] <proxy_workflow.png, id=87, 883.3pt x 198.7425pt>
+] [18] <proxy_workflow.png, id=92, 883.3pt x 198.7425pt>
 File: proxy_workflow.png Graphic file (type png)
 
 <use proxy_workflow.png>
-Package pdftex.def Info: proxy_workflow.png used on input line 295.
+Package pdftex.def Info: proxy_workflow.png used on input line 307.
 (pdftex.def)             Requested size: 360.0pt x 80.99973pt.
- [18 <./proxy_workflow.png>]
+ [19 <./proxy_workflow.png>]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ú in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
- [19]
-<left.png, id=95, 475.7775pt x 638.385pt>
+ [20]
+<left.png, id=100, 475.7775pt x 638.385pt>
 File: left.png Graphic file (type png)
  <use left.png>
-Package pdftex.def Info: left.png used on input line 322.
+Package pdftex.def Info: left.png used on input line 334.
 (pdftex.def)             Requested size: 152.63896pt x 204.80363pt.
 
-<right.png, id=96, 489.83pt x 768.8725pt>
+<right.png, id=101, 489.83pt x 768.8725pt>
 File: right.png Graphic file (type png)
  <use right.png>
-Package pdftex.def Info: right.png used on input line 327.
+Package pdftex.def Info: right.png used on input line 339.
 (pdftex.def)             Requested size: 152.63896pt x 239.5916pt.
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 333.
+ mdframed uses option nobreak mdframed on input line 345.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 333.
- [20 <./left.png> <./right.png>]
+ mdframed uses option nobreak mdframed on input line 345.
+ [21 <./left.png> <./right.png>]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ú in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
- [21]
+ [22]
 Chapter 6.
-[22
+[23
 
 ]
 Chapter 7.
 
-Overfull \hbox (26.54997pt too wide) in alignment at lines 367--372
+Overfull \hbox (26.54997pt too wide) in alignment at lines 379--384
  [] [] 
  []
 
 
-Overfull \hbox (26.54997pt too wide) in alignment at lines 372--401
+Overfull \hbox (26.54997pt too wide) in alignment at lines 384--413
  [] [] 
  []
 
 
-Underfull \hbox (badness 6859) in paragraph at lines 412--413
+Underfull \hbox (badness 6859) in paragraph at lines 424--425
 []|\OT1/cmr/m/n/10.95 User-study eval-u-a-tion of an au-to-mated
  []
 
 
-Overfull \hbox (26.54997pt too wide) in alignment at lines 401--419
+Overfull \hbox (26.54997pt too wide) in alignment at lines 413--431
  [] [] 
  []
 
-[23
+[24
 
-] [24]
+] [25]
 \ganttx=\count298
 \ganttheight=\count299
 Missing character: There is no ; in font nullfont!
@@ -1100,61 +1101,62 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-Overfull \hbox (2.97758pt too wide) in paragraph at lines 447--448
+Overfull \hbox (2.97758pt too wide) in paragraph at lines 459--460
 [][] 
  []
 
-[25
+[26
 
 ]
 Overfull \vbox (50.82726pt too high) has occurred while \output is active []
 
 
-[26] (./master.bbl [27
+[27] (./master.bbl [28
 
 
 
-] [28]
+] [29]
 Missing character: There is no √ in font cmr10!
 Missing character: There is no ≥ in font cmr10!
 Missing character: There is no √ in font cmr10!
 Missing character: There is no © in font cmr10!
- [29]) [30]
+ [30]) [31]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ì in font cmr10!
- [31
-
-] [32
+ [32
 
 ] [33
 
 ] [34
 
+] [35
+
 ] (./master.aux) ) 
 Here is how much of TeX's memory you used:
- 18821 strings out of 493488
- 347364 string characters out of 3141326
+ 18823 strings out of 493488
+ 347388 string characters out of 3141326
  402074 words of memory out of 3000000
- 21715 multiletter control sequences out of 15000+200000
- 17275 words of font info for 66 fonts, out of 3000000 for 9000
+ 21716 multiletter control sequences out of 15000+200000
+ 17443 words of font info for 67 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
  63i,11n,81p,1485b,747s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfon
 ts/cm/cmbx10.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmbx12.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmr10.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmr12.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmr17.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-r6.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.
-pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.p
-fb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pf
-b></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-
-Output written on master.pdf (38 pages, 440875 bytes).
+/cm/cmmi10.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmr10.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmr12.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr17.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
+6.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.p
+fb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pf
+b></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb
+></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+</usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
+Output written on master.pdf (39 pages, 465753 bytes).
 PDF statistics:
- 184 PDF objects out of 1000 (max. 8388607)
- 121 compressed objects within 2 object streams
+ 195 PDF objects out of 1000 (max. 8388607)
+ 129 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  42 words of extra memory for PDF output out of 10000 (max. 10000000)
 
