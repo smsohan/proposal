@@ -2,26 +2,30 @@
 \contentsline {section}{\numberline {1.1}Research Context and Scope}{4}
 \contentsline {chapter}{\numberline {2}Background}{6}
 \contentsline {section}{\numberline {2.1}API Usability and Documentation}{6}
+\contentsline {subsubsection}{Case Studies}{6}
+\contentsline {subsubsection}{Tool Support}{7}
+\contentsline {subsubsection}{Collaboration}{8}
+\contentsline {subsection}{\numberline {2.1.1}Presentation}{8}
 \contentsline {section}{\numberline {2.2}RESTful API Documentation}{9}
-\contentsline {chapter}{\numberline {3}Research Questions}{12}
-\contentsline {section}{\numberline {3.1}RQ1: What are the requirements for usable RESTful API documentation? }{12}
-\contentsline {section}{\numberline {3.2}RQ2: How to provide reusable tool support so that RESTful API developers can create and maintain usable RESTful API documentation? }{13}
-\contentsline {section}{\numberline {3.3}RQ3: How to evaluate a technique and tool for RESTful API documentation?}{13}
-\contentsline {chapter}{\numberline {4}Research Contributions and Methods}{14}
-\contentsline {section}{\numberline {4.1}RQ1: I will perform literature reviews to identify the requirements for usable RESTful API documentation.}{14}
-\contentsline {section}{\numberline {4.2}RQ2: I will present a novel technique for automatically generating and maintaining RESTful API documentation with reusable tool support.}{15}
-\contentsline {section}{\numberline {4.3}RQ3: I will evaluate the proposed technique for RESTful API documentation.}{16}
-\contentsline {chapter}{\numberline {5}Current Progress}{17}
-\contentsline {subsection}{\numberline {5.0.1}Research Project 1: Systematic Literature Review}{17}
-\contentsline {section}{\numberline {5.1}Research Project 2: Case Study}{18}
-\contentsline {section}{\numberline {5.2}Research Project 3: Finding a Technique for RESTful API documentation}{18}
-\contentsline {section}{\numberline {5.3}Research Project 4: Prototype Tool Development}{20}
-\contentsline {subsection}{\numberline {5.3.1}The Spy}{20}
-\contentsline {subsection}{\numberline {5.3.2}The Web App}{21}
-\contentsline {subsection}{\numberline {5.3.3}Database}{22}
-\contentsline {chapter}{\numberline {6}Conclusion}{23}
-\contentsline {chapter}{\numberline {7}Milestones}{24}
-\contentsline {chapter}{Appendix Conference Paper at SERVICES 2015}{32}
-\contentsline {chapter}{Appendix Conference Paper at ASE 2015 (New Ideas Track)}{33}
-\contentsline {chapter}{Appendix Conference Paper at ASE 2015 (Tool Demo Track)}{34}
-\contentsline {chapter}{Appendix Technical Report}{35}
+\contentsline {subsection}{\numberline {2.2.1}Case Studies}{9}
+\contentsline {subsection}{\numberline {2.2.2}RESTful API Specification Languages}{10}
+\contentsline {chapter}{\numberline {3}Research Questions}{13}
+\contentsline {section}{\numberline {3.1}RQ1: What are the requirements for usable RESTful API documentation? }{13}
+\contentsline {section}{\numberline {3.2}RQ2: How to provide a cost-effective and reusable tool support so that RESTful API developers can create and maintain usable RESTful API documentation? }{14}
+\contentsline {section}{\numberline {3.3}RQ3: How to evaluate a technique and tool for RESTful API documentation?}{14}
+\contentsline {chapter}{\numberline {4}Research Contributions and Methods}{15}
+\contentsline {section}{\numberline {4.1}RQ1: Literature reviews of the requirements for usable RESTful API documentation.}{15}
+\contentsline {section}{\numberline {4.2}RQ2: Present a novel technique for automatically generating and maintaining RESTful API documentation with reusable tool support.}{16}
+\contentsline {section}{\numberline {4.3}RQ3: I will evaluate the proposed technique for RESTful API documentation.}{17}
+\contentsline {chapter}{\numberline {5}Current Progress}{18}
+\contentsline {subsection}{\numberline {5.0.1}Research Project 1: Systematic Literature Review}{18}
+\contentsline {section}{\numberline {5.1}Research Project 2: Case Study}{19}
+\contentsline {section}{\numberline {5.2}Research Project 3: Finding a Technique for RESTful API documentation}{19}
+\contentsline {section}{\numberline {5.3}Research Project 4: Prototype Tool Development}{22}
+\contentsline {subsection}{\numberline {5.3.1}The Spy}{22}
+\contentsline {subsection}{\numberline {5.3.2}The Web App}{23}
+\contentsline {subsection}{\numberline {5.3.3}Database}{24}
+\contentsline {section}{\numberline {5.4}Research Project 5: Preliminary Evaluation}{24}
+\contentsline {chapter}{\numberline {6}Conclusion}{25}
+\contentsline {chapter}{\numberline {7}Milestones}{26}
+\contentsline {chapter}{Appendix Appendix}{34}

@@ -19,46 +19,47 @@ Warning--I didn't find a database entry for "DBLP:conf/icsm/2012"
 Warning--to sort, need author or key in iee_std
 Warning--empty author in iee_std
 Warning--empty journal in hadley2006web
+Warning--empty journal in kitchenham2007guidelines
 Warning--empty booktitle in Maleshkova_investigating
-You've used 31 entries,
+You've used 32 entries,
             1935 wiz_defined-function locations,
-            669 strings with 9638 characters,
-and the built_in function-call counts, 15065 in all, are:
-= -- 1542
-> -- 531
-< -- 36
-+ -- 188
-- -- 178
-* -- 1154
-:= -- 2367
-add.period$ -- 106
-call.type$ -- 31
-change.case$ -- 243
-chr.to.int$ -- 29
-cite$ -- 36
-duplicate$ -- 682
-empty$ -- 1120
-format.name$ -- 228
-if$ -- 3208
+            673 strings with 9787 characters,
+and the built_in function-call counts, 15370 in all, are:
+= -- 1570
+> -- 544
+< -- 37
++ -- 192
+- -- 182
+* -- 1178
+:= -- 2423
+add.period$ -- 108
+call.type$ -- 32
+change.case$ -- 250
+chr.to.int$ -- 30
+cite$ -- 38
+duplicate$ -- 695
+empty$ -- 1140
+format.name$ -- 235
+if$ -- 3265
 int.to.chr$ -- 3
 int.to.str$ -- 0
-missing$ -- 30
-newline$ -- 157
-num.names$ -- 90
-pop$ -- 283
+missing$ -- 31
+newline$ -- 161
+num.names$ -- 93
+pop$ -- 291
 preamble$ -- 1
-purify$ -- 244
+purify$ -- 251
 quote$ -- 0
-skip$ -- 526
+skip$ -- 537
 stack$ -- 0
-substring$ -- 1101
+substring$ -- 1113
 swap$ -- 199
 text.length$ -- 22
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 186
-warning$ -- 4
-while$ -- 123
+type$ -- 192
+warning$ -- 5
+while$ -- 125
 width$ -- 0
-write$ -- 417
+write$ -- 427
 (There was 1 error message)
