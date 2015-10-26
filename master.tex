@@ -118,10 +118,10 @@ To achieve the aforementioned goals, I begin by discussing existing literature o
 
 \section{API Usability and Documentation}
 
-\subsubsection{Case Studies} % (fold)
+\subsection{Case Studies} % (fold)
 \label{ssub:case_studies}
 
-% subsubsection case_studies (end)
+% subsection case_studies (end)
 
 API usability is a qualitative concept derived from the characteristics that make an API easy to use. Several papers in the existing literature have focused on identifying the characteristics that make an API usable. Robillard studied API usability by surveying 83 software developers at Microsoft \cite{Robillard_a_field_study}. Robillard found that 78\% of the survey participants read API documentation to learn the APIs, 55\% used code examples, 34\% experimented with the APIs, 30\% read articles, and 29\% asked colleagues. While API documentation is used as the principal source of information about how to use an API, Robillard et al. found that the most severe API learning obstacles are related to the API documentation For API usability, Robillard suggested the following requirements as must-have for API documentation: include good examples, be complete, support many example usage scenarios, be conveniently organized, and include relevant design elements. These requirements for general purpose API documentation can also be applied to RESTful API documentation.
 
@@ -129,17 +129,17 @@ Zibran et al. analyzed bug repositories  for 562 API usability related bugs from
 
 Kuhn performed a user study with 19 professional software developers to understand requirements for tool development to support API learnability \cite{Kuhn_on_designing}. Kuhn recommended the following as requirements for API documentation: trustworthiness, confidentiality, lack of information overload and the need for code examples as first-class documentation artifacts. Shi et al. studied the evolution of API documentation for five different Java projects. They presented a quantitative analysis of the types of changes with impacts on API behaviors and the frequency of the API elements that change between versions \cite{shi2011empirical}. Shi et al. observed a large number of API documentation changes related to polishing the custom content, (i.e. fix typos, and API usage examples). They recommended API documentation tools to support editors for custom content to provide usage tips and simple ways to include API usage examples without syntax errors.
 
-\subsubsection{Tool Support} % (fold)
+\subsection{Tool Support} % (fold)
 \label{ssub:tool_support}
 
-% subsubsection tool_support (end)
+% subsection tool_support (end)
 
 Several authors introduced tool support for including usage examples with API documentation. Hoffman et al. recommended using executable examples in API documentation \cite{Hoffman_api_documentation}. They introduced Roast test as tool support  to combine prosaic descriptions of Java APIs along with executable code examples in a unified API documentation. Montandon et al. developed APIMiner as a search tool for Java and Android APIs and recommended providing production-like API usage examples in the API documentation \cite{montandon2013documenting}. They observed that 35\% of API related web searches performed on APIMiner included the term “example” inferring that developers search for source code examples while using API documentation. Zhu et al. developed an Eclipse plugin called UsETeC to extract API usage examples by automatically synthesizing JUnit test code of the APIs \cite{zhu2014mining}. Stylos presented Jadeite as an IDE plug-in that combines a few techniques to provide developers with faster access to relevant API documentation \cite{Jadeite}. Jadeite uses placeholders for API elements such as classes and method names that developers commonly expect to exist, but the actual classes or methods are named differently. When developers search for placeholder API elements, Jadeite shows links to the API documentation of the actual API elements and finds relevant usage examples from Google code search. For deployment of API documentation, Stepalina identified several advantages of using a Software as a Service (SaaS) tool including lower cost, better quality, and reusability \cite{Stepalina_saas}.
 
 
-\subsubsection{Collaboration} % (fold)
+\subsection{Collaboration} % (fold)
 
-% subsubsection subsubsection_name (end)
+% subsection subsection_name (end)
 
 Several authors presented techniques for linking official API documentation with crowd-sourced API usage examples that is otherwise fragmented. Nasehi et al. recommended mining knowledge repositories such as StackOverflow and developer forums should be considered for retrieving useful code examples \cite{Nasehi_what_makes}. They also recommended providing wiki-like features so API users can contribute with relevant API examples to the documentation of the APIs in a way so that the official and crowd-sourced sections of the documentation can be easily distinguished. Parnin et al. found that examples of 87.9\% of all jQuery API methods are found by searching software development blogs and forums \cite{Parnin_measuring}. They found these crowd-sourced posts about the APIs also got a median of 8 comments per post which enables an author-reader collaboration. Wu et al. presented an Eclipse plugin called CoDocent that can automatically find code examples using various online code search engines and link with the relevant official API documentation \cite{wu2010codocent}. Chen et al. presented a technique to automatically link official documentation with crowd-sourced documentation by recording the API related web searches that are performed by developers \cite{Chen_who_asked}.
 
@@ -299,7 +299,8 @@ Following the plan, I will perform an evaluation to find the effectiveness of my
 \chapter{Current Progress}
 
 In my first two years of the PhD program, I have made progress towards achieving the proposed contributions. The current progress can be explained through five different research projects that have been carried out during this time.
-\subsection{Research Project 1: Systematic Literature Review}
+
+\section{Research Project 1: Systematic Literature Review}
 I started my research by performing a systematic literature review following the guidelines as suggested by Kitchenham on the topic of web API evolution to understand the related challenges and their available solutions \cite{kitchenham2007guidelines}. In particular, the goals of the literature review was to understand the following:
 
 \begin{enumerate}
@@ -426,7 +427,7 @@ The database component plays a supporting role so that the Spy and the web app c
 
 I have performed a preliminary evaluation of SpyREST and found it to produce more accurate documentation of RESTful APIs compared to the official documentation. In this preliminary evaluation, I have used SpyREST to auto-generate the documentation of 25 RESTful API actions from three different products. To run the example API calls for this evaluation, I have used automated test code that provides both test coverage as well as updated API documentation. In 5 of the 25 API actions, SpyREST documented API response fields that were not included the official API documentations, resulting into more up to date documentation of the APIs.
 
-This prototype implementation has been productized and being used as a RESTful API documentation tool at Cisco Systems, Inc.\footnote{\url{https://api-docs.amp.sourcefire.com/}}. In the remainder of my research, I plan to conduct additional evaluations of SpyREST from this production usage and involving RESTful API developers from the industry to better understand the effectiveness of the HTTP Proxy server based approach of automated RESTful API documentation.
+This prototype implementation has been productized and is being used as a RESTful API documentation tool at Cisco Systems, Inc.\footnote{\url{https://api-docs.amp.sourcefire.com/}}. In the remainder of my research, I plan to conduct additional evaluations of SpyREST from this production usage and involving RESTful API developers from the industry to better understand the effectiveness of the HTTP Proxy server based approach of automated RESTful API documentation.
 
 \chapter{Conclusion}
 
